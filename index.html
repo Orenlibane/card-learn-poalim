@@ -6,16 +6,16 @@
   <title>אוספים עובדות - בנק הפועלים לילדים</title>
   <style>
     :root {
-      --bg: #f4f5f7;
-      --panel: #ffffff;
-      --ink: #202833;
-      --muted: #66717c;
       --red: #d71920;
-      --red-dark: #9d161b;
-      --grey: #5f6670;
-      --gold: #f3c243;
-      --line: rgba(23, 32, 51, .14);
-      --light-line: rgba(32, 40, 51, .12);
+      --red-dark: #9b141b;
+      --ink: #202833;
+      --muted: #69737f;
+      --line: rgba(32, 40, 51, .12);
+      --soft: #f5f6f8;
+      --panel: #ffffff;
+      --gold: #f2c24f;
+      --green: #18a05e;
+      --stage: #111821;
       --radius: 8px;
     }
 
@@ -27,9 +27,9 @@
       font-family: Arial, "Noto Sans Hebrew", system-ui, sans-serif;
       color: var(--ink);
       background:
-        linear-gradient(115deg, rgba(215, 25, 32, .14), transparent 34%),
-        linear-gradient(245deg, rgba(95, 102, 112, .12), transparent 38%),
-        linear-gradient(180deg, #ffffff, var(--bg));
+        linear-gradient(115deg, rgba(215, 25, 32, .09), transparent 32%),
+        linear-gradient(180deg, #ffffff 0%, #f4f5f7 100%);
+      overflow-x: hidden;
     }
 
     button {
@@ -37,584 +37,1306 @@
       cursor: pointer;
     }
 
-    img {
+    img,
+    canvas {
       display: block;
       max-width: 100%;
     }
 
     .app {
-      width: min(1440px, calc(100% - 28px));
-      margin: 0 auto;
-      padding: 18px 0 28px;
+      min-height: 100svh;
       display: grid;
-      grid-template-columns: minmax(0, 1fr) 330px;
-      gap: 16px;
-    }
-
-    .topbar,
-    .playmat,
-    .rail,
-    .pack-tab,
-    .stat {
-      border: 1px solid var(--light-line);
-      border-radius: var(--radius);
-      background: rgba(255, 255, 255, .92);
-      box-shadow: 0 20px 55px rgba(32, 40, 51, .12);
-    }
-
-    .main {
-      min-width: 0;
-      display: grid;
-      gap: 14px;
+      grid-template-rows: auto minmax(0, 1fr) auto;
     }
 
     .topbar {
-      padding: 14px;
+      min-height: 72px;
+      padding: 10px clamp(12px, 2vw, 24px);
+      border-bottom: 1px solid var(--line);
+      background: rgba(255, 255, 255, .92);
+      backdrop-filter: blur(18px);
       display: grid;
       grid-template-columns: minmax(0, 1fr) auto;
-      gap: 12px;
+      gap: 14px;
       align-items: center;
-      border-top: 5px solid var(--red);
+      position: sticky;
+      top: 0;
+      z-index: 20;
     }
 
     .brand {
       min-width: 0;
       display: grid;
-      gap: 4px;
-      position: relative;
-      padding-inline-start: 74px;
+      grid-template-columns: 52px minmax(0, 1fr);
+      align-items: center;
+      gap: 12px;
     }
 
-    .brand::before {
+    .mark {
+      width: 42px;
+      height: 42px;
+      border-radius: 10px;
+      background: var(--red);
+      transform: rotate(45deg);
+      position: relative;
+      box-shadow: 0 12px 24px rgba(215, 25, 32, .2);
+      justify-self: center;
+    }
+
+    .mark::before,
+    .mark::after {
       content: "";
       position: absolute;
-      inset-inline-start: 8px;
-      top: 50%;
-      width: 48px;
-      height: 48px;
-      border-radius: 12px;
-      background: var(--red);
-      transform: translateY(-50%) rotate(45deg);
-      box-shadow: 0 9px 22px rgba(215, 25, 32, .24);
+      background: #ffffff;
+      border-radius: 99px;
+      inset: 50% auto auto 50%;
+      transform: translate(-50%, -50%);
     }
 
-    .brand::after {
-      content: "+";
-      position: absolute;
-      inset-inline-start: 20px;
-      top: 50%;
-      color: #ffffff;
-      font-size: 34px;
-      font-weight: 900;
-      line-height: 1;
-      transform: translateY(-53%);
+    .mark::before { width: 24px; height: 7px; }
+    .mark::after { width: 7px; height: 24px; }
+
+    .title {
+      min-width: 0;
+      display: grid;
+      gap: 2px;
     }
 
-    .brand b {
-      font-size: clamp(2rem, 4.5vw, 4.5rem);
-      line-height: .9;
-      letter-spacing: 0;
+    .title b {
       color: var(--red);
+      font-size: clamp(1.35rem, 2.4vw, 2.4rem);
+      line-height: 1;
+      letter-spacing: 0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
     }
 
-    .brand span {
-      color: var(--grey);
-      font-weight: 900;
+    .title span,
+    .status-chip span,
+    .mini-label {
+      color: var(--muted);
+      font-weight: 800;
     }
 
-    .actions {
+    .status {
       display: flex;
+      align-items: center;
       gap: 8px;
       flex-wrap: wrap;
       justify-content: end;
     }
 
-    .primary,
-    .secondary {
+    .status-chip,
+    .age-toggle {
       min-height: 42px;
-      border: 0;
       border-radius: var(--radius);
-      padding: 0 15px;
+      border: 1px solid var(--line);
+      background: #fff;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 0 12px;
       font-weight: 900;
+      white-space: nowrap;
+    }
+
+    .status-chip b {
+      color: var(--red);
+      font-size: 1.05rem;
+    }
+
+    .age-toggle {
+      color: var(--ink);
+      appearance: none;
+    }
+
+    .workspace {
+      min-height: 0;
+      width: min(1560px, calc(100% - 24px));
+      margin: 0 auto;
+      padding: 14px 0 18px;
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) 330px;
+      gap: 14px;
+    }
+
+    .game-surface {
+      min-width: 0;
+      display: grid;
+      grid-template-rows: minmax(480px, 1fr) auto;
+      gap: 12px;
+    }
+
+    .stage-shell {
+      position: relative;
+      min-height: 560px;
+      overflow: hidden;
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 24% 18%, rgba(255, 255, 255, .12), transparent 26%),
+        radial-gradient(circle at 74% 62%, rgba(215, 25, 32, .22), transparent 32%),
+        linear-gradient(145deg, #222c36, var(--stage));
+      box-shadow: 0 30px 80px rgba(17, 24, 33, .26);
+      isolation: isolate;
+    }
+
+    .stage-shell::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      pointer-events: none;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.04) 1px, transparent 1px) 0 0 / 48px 48px,
+        linear-gradient(0deg, rgba(255,255,255,.035) 1px, transparent 1px) 0 0 / 48px 48px;
+      mask-image: linear-gradient(180deg, rgba(0,0,0,.85), transparent 76%);
+      z-index: 1;
+    }
+
+    #threeStage {
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 0;
+    }
+
+    .stage-ui {
+      position: relative;
+      z-index: 3;
+      min-height: 560px;
+      padding: clamp(14px, 2vw, 26px);
+      display: grid;
+      grid-template-columns: minmax(260px, 380px) minmax(0, 1fr);
+      gap: clamp(16px, 3vw, 34px);
+      align-items: center;
+      pointer-events: none;
+    }
+
+    .pack-console {
+      color: #ffffff;
+      display: grid;
+      gap: 14px;
+      align-content: center;
+      pointer-events: auto;
+    }
+
+    .pack-kicker {
+      width: fit-content;
+      min-height: 32px;
+      border-radius: 999px;
+      padding: 6px 12px;
+      background: rgba(255, 255, 255, .13);
+      border: 1px solid rgba(255, 255, 255, .18);
+      color: #ffe7e9;
+      font-weight: 900;
+    }
+
+    .pack-title {
+      margin: 0;
+      font-size: clamp(2.2rem, 5vw, 5.8rem);
+      line-height: .88;
+      letter-spacing: 0;
+      color: #ffffff;
+      text-shadow: 0 18px 45px rgba(0,0,0,.38);
+    }
+
+    .pack-description {
+      width: min(390px, 100%);
+      margin: 0;
+      color: rgba(255, 255, 255, .82);
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .primary,
+    .secondary,
+    .icon-button {
+      min-height: 46px;
+      border-radius: var(--radius);
+      border: 0;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      font-weight: 900;
+      transition: transform .16s ease, box-shadow .16s ease, opacity .16s ease;
     }
 
     .primary {
       color: #ffffff;
-      background: linear-gradient(180deg, #e3262d, var(--red));
-      box-shadow: 0 12px 26px rgba(215, 25, 32, .22);
+      background: linear-gradient(180deg, #ee2c35, var(--red));
+      box-shadow: 0 16px 34px rgba(215, 25, 32, .28);
+      padding: 0 18px;
     }
 
     .secondary {
+      color: #ffffff;
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.2);
+      padding: 0 14px;
+    }
+
+    .icon-button {
+      width: 46px;
       color: var(--red);
-      border: 1px solid rgba(215,25,32,.28);
       background: #ffffff;
+      border: 1px solid var(--line);
+      font-size: 1.25rem;
     }
 
-    .playmat {
-      min-height: 660px;
-      padding: clamp(14px, 2vw, 24px);
-      display: grid;
-      grid-template-columns: minmax(220px, 340px) minmax(0, 1fr);
-      gap: clamp(16px, 3vw, 30px);
-      align-items: center;
-      background:
-        linear-gradient(90deg, rgba(215,25,32,.08), transparent 44%),
-        repeating-linear-gradient(0deg, rgba(32,40,51,.025) 0 2px, transparent 2px 10px),
-        #ffffff;
-      border-top: 5px solid var(--red);
+    .primary:hover,
+    .secondary:hover,
+    .icon-button:hover {
+      transform: translateY(-2px);
     }
 
-    .pack-stage {
-      display: grid;
-      gap: 16px;
-      justify-items: center;
+    .primary:disabled {
+      opacity: .55;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
     }
 
-    .pack-stage h1 {
-      margin: 0;
-      font-size: clamp(2rem, 5vw, 4.8rem);
-      line-height: .92;
-      letter-spacing: 0;
-      text-align: center;
-    }
-
-    .pack-stage p {
-      margin: 0;
-      color: var(--grey);
-      font-weight: 900;
-      line-height: 1.45;
-      text-align: center;
-    }
-
-    .pack-image {
-      width: min(290px, 78vw);
-      aspect-ratio: 512 / 716;
-      object-fit: cover;
-      border-radius: var(--radius);
-      box-shadow: 0 26px 70px rgba(0,0,0,.32);
-      transform: rotate(-2deg);
-      transition: transform .2s ease;
-    }
-
-    .pack-image.is-opening {
-      animation: pop .54s cubic-bezier(.2,.9,.2,1);
-    }
-
-    .card-zone {
-      min-width: 0;
-      display: grid;
-      gap: 14px;
-    }
-
-    .zone-head {
+    .stage-actions {
       display: flex;
-      gap: 10px;
-      align-items: end;
-      justify-content: space-between;
+      gap: 9px;
       flex-wrap: wrap;
     }
 
-    .zone-head h2 {
+    .reward-strip {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .reward-pill {
+      min-height: 34px;
+      border-radius: 999px;
+      padding: 7px 11px;
+      background: rgba(255,255,255,.14);
+      border: 1px solid rgba(255,255,255,.18);
+      color: #ffffff;
+      font-weight: 900;
+    }
+
+    .reward-pill b { color: #ffe28c; }
+
+    .reveal-board {
+      pointer-events: auto;
+      align-self: stretch;
+      display: grid;
+      align-content: center;
+      gap: 14px;
+    }
+
+    .reveal-head {
+      display: flex;
+      align-items: end;
+      justify-content: space-between;
+      gap: 12px;
+      color: #ffffff;
+    }
+
+    .reveal-head h2 {
       margin: 0;
-      font-size: clamp(1.5rem, 3vw, 2.7rem);
+      font-size: clamp(1.5rem, 3vw, 3rem);
+      line-height: 1;
       letter-spacing: 0;
     }
 
-    .zone-head span {
-      color: var(--grey);
+    .reveal-head span {
+      color: rgba(255, 255, 255, .78);
       font-weight: 900;
     }
 
-    .card-grid {
+    .reveal-slots {
+      min-height: 360px;
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 12px;
-    }
-
-    .card-tile {
-      min-width: 0;
-      border-radius: var(--radius);
-      border: 1px solid var(--light-line);
-      background: #ffffff;
-      padding: 10px;
-      display: grid;
-      gap: 9px;
-      animation: rise .32s ease both;
-    }
-
-    .card-tile img {
-      width: 100%;
-      aspect-ratio: 512 / 716;
-      object-fit: cover;
-      border-radius: var(--radius);
-      background: #fff7e8;
-    }
-
-    .card-tile b {
-      color: var(--red);
-      font-size: 1.05rem;
-      line-height: 1.2;
-    }
-
-    .card-tile span {
-      color: var(--grey);
-      font-size: .9rem;
-      font-weight: 800;
-      line-height: 1.35;
-    }
-
-    .empty {
-      min-height: 220px;
-      border: 1px dashed rgba(215,25,32,.32);
-      border-radius: var(--radius);
-      display: grid;
-      place-items: center;
-      color: var(--red);
-      font-weight: 900;
-    }
-
-    .pack-tabs {
-      display: grid;
-      grid-template-columns: repeat(5, minmax(0, 1fr));
-      gap: 10px;
-    }
-
-    .pack-tab {
-      min-width: 0;
-      padding: 8px;
-      color: var(--ink);
-      text-align: right;
-      display: grid;
-      grid-template-columns: 52px minmax(0, 1fr);
-      gap: 8px;
       align-items: center;
     }
 
-    .pack-tab.is-active {
-      outline: 3px solid var(--red);
-      background: rgba(215, 25, 32, .08);
+    .slot,
+    .revealed-card {
+      min-width: 0;
+      border-radius: var(--radius);
+      position: relative;
     }
 
-    .pack-tab img {
-      width: 52px;
+    .slot {
+      min-height: 320px;
+      border: 2px dashed rgba(255,255,255,.24);
+      background:
+        linear-gradient(180deg, rgba(255,255,255,.12), rgba(255,255,255,.04));
+      display: grid;
+      place-items: center;
+      color: rgba(255,255,255,.72);
+      font-weight: 900;
+    }
+
+    .slot::before {
+      content: "";
+      width: min(118px, 50%);
+      aspect-ratio: 512 / 716;
+      border-radius: 7px;
+      background: rgba(255,255,255,.12);
+      box-shadow: inset 0 0 0 2px rgba(255,255,255,.18);
+      transform: rotate(var(--angle, 0deg));
+    }
+
+    .revealed-card {
+      background: #ffffff;
+      padding: 9px;
+      box-shadow: 0 22px 48px rgba(0,0,0,.26);
+      transform-style: preserve-3d;
+      animation: dealIn .72s cubic-bezier(.18,.9,.2,1) both;
+    }
+
+    .revealed-card:nth-child(1) { --rotate: -4deg; }
+    .revealed-card:nth-child(2) { --rotate: 1deg; animation-delay: .08s; }
+    .revealed-card:nth-child(3) { --rotate: 5deg; animation-delay: .16s; }
+
+    .revealed-card img {
+      width: 100%;
       aspect-ratio: 512 / 716;
       object-fit: cover;
       border-radius: 6px;
-      background: #fff7e8;
+      background: #fff8e8;
     }
 
-    .pack-tab b,
-    .pack-tab span {
-      overflow-wrap: anywhere;
+    .card-state {
+      position: absolute;
+      inset-inline-start: 16px;
+      top: 16px;
+      min-height: 30px;
+      border-radius: 999px;
+      padding: 6px 9px;
+      color: #ffffff;
+      background: var(--green);
+      font-size: .85rem;
+      font-weight: 900;
+      box-shadow: 0 10px 22px rgba(0,0,0,.2);
     }
 
-    .pack-tab b {
-      display: block;
+    .card-state.duplicate { background: #69737f; }
+
+    .revealed-card footer {
+      display: grid;
+      gap: 3px;
+      padding: 9px 2px 2px;
+    }
+
+    .revealed-card b {
+      color: var(--red);
+      font-size: 1rem;
       line-height: 1.15;
     }
 
-    .pack-tab span {
-      color: var(--grey);
+    .revealed-card span {
+      color: var(--muted);
+      font-size: .86rem;
+      font-weight: 800;
+      line-height: 1.3;
+    }
+
+    .pack-dock {
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      background: #ffffff;
+      padding: 10px;
+      display: grid;
+      gap: 10px;
+    }
+
+    .dock-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+      padding: 0 4px;
+    }
+
+    .dock-head b {
+      color: var(--red);
+      font-size: 1.1rem;
+    }
+
+    .pack-carousel {
+      display: grid;
+      grid-template-columns: repeat(5, minmax(150px, 1fr));
+      gap: 10px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 2px;
+    }
+
+    .pack-tile {
+      min-width: 150px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #fff;
+      padding: 8px;
+      display: grid;
+      grid-template-columns: 54px minmax(0, 1fr);
+      gap: 9px;
+      text-align: right;
+      align-items: center;
+      scroll-snap-align: start;
+    }
+
+    .pack-tile.is-active {
+      outline: 3px solid rgba(215, 25, 32, .28);
+      border-color: rgba(215, 25, 32, .42);
+      background: rgba(215, 25, 32, .045);
+    }
+
+    .pack-tile img {
+      width: 54px;
+      aspect-ratio: 512 / 716;
+      object-fit: cover;
+      border-radius: 6px;
+      background: #fff8e8;
+    }
+
+    .pack-tile b,
+    .pack-tile span {
+      overflow-wrap: anywhere;
+    }
+
+    .pack-tile b {
+      display: block;
+      color: var(--ink);
+      line-height: 1.15;
+    }
+
+    .pack-tile span {
+      color: var(--muted);
       font-size: .85rem;
       font-weight: 800;
     }
 
-    .rail {
-      padding: 14px;
+    .side-panel {
+      min-width: 0;
       align-self: start;
-      display: grid;
-      gap: 14px;
       position: sticky;
-      top: 14px;
+      top: 88px;
+      display: grid;
+      gap: 12px;
     }
 
-    .rail h2 {
+    .panel-block {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      padding: 13px;
+      display: grid;
+      gap: 12px;
+      box-shadow: 0 18px 42px rgba(32, 40, 51, .08);
+    }
+
+    .panel-title {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 10px;
+    }
+
+    .panel-title h2,
+    .panel-title h3 {
       margin: 0;
-      font-size: 1.55rem;
+      color: var(--red);
       letter-spacing: 0;
     }
 
-    .stats {
+    .progress-ring {
+      width: 118px;
+      aspect-ratio: 1;
+      border-radius: 50%;
+      margin: 2px auto;
+      background: conic-gradient(var(--red) var(--progress, 0deg), #eceff2 0);
       display: grid;
-      grid-template-columns: repeat(2, minmax(0, 1fr));
+      place-items: center;
+      position: relative;
+    }
+
+    .progress-ring::before {
+      content: "";
+      position: absolute;
+      inset: 11px;
+      border-radius: 50%;
+      background: #ffffff;
+    }
+
+    .progress-ring b {
+      position: relative;
+      color: var(--red);
+      font-size: 1.55rem;
+      z-index: 1;
+    }
+
+    .set-list,
+    .mission-list {
+      display: grid;
       gap: 8px;
     }
 
-    .stat {
-      padding: 12px;
+    .set-row,
+    .mission {
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 10px;
       display: grid;
-      gap: 4px;
+      gap: 7px;
+      background: #fff;
     }
 
-    .stat b {
-      font-size: 1.7rem;
-      color: var(--red);
+    .set-row header,
+    .mission header {
+      display: flex;
+      justify-content: space-between;
+      gap: 8px;
+      align-items: center;
+      font-weight: 900;
     }
 
-    .stat span,
-    .mission span {
-      color: var(--grey);
+    .set-row small,
+    .mission small {
+      color: var(--muted);
       font-weight: 800;
       line-height: 1.35;
     }
 
-    .mission-list {
-      display: grid;
-      gap: 10px;
+    .meter {
+      height: 8px;
+      border-radius: 999px;
+      background: #edf0f3;
+      overflow: hidden;
     }
 
-    .mission {
-      border: 1px solid var(--light-line);
+    .meter i {
+      display: block;
+      height: 100%;
+      width: var(--value, 0%);
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--red), #f05c63);
+      transition: width .36s ease;
+    }
+
+    .toast-stack {
+      position: fixed;
+      inset-inline-end: 18px;
+      bottom: 76px;
+      z-index: 40;
+      display: grid;
+      gap: 8px;
+      pointer-events: none;
+    }
+
+    .toast {
+      min-width: min(320px, calc(100vw - 36px));
       border-radius: var(--radius);
-      padding: 12px;
       background: #ffffff;
-      display: grid;
-      gap: 5px;
+      border: 1px solid var(--line);
+      box-shadow: 0 20px 50px rgba(32, 40, 51, .22);
+      padding: 12px;
+      animation: toastIn .28s ease both;
+      font-weight: 900;
     }
 
-    .mission b {
+    .bottom-nav {
+      display: none;
+      position: sticky;
+      bottom: 0;
+      z-index: 22;
+      border-top: 1px solid var(--line);
+      background: rgba(255,255,255,.94);
+      backdrop-filter: blur(18px);
+      grid-template-columns: repeat(4, 1fr);
+      padding: 6px;
+      gap: 6px;
+    }
+
+    .bottom-nav button {
+      min-height: 44px;
+      border: 0;
+      border-radius: var(--radius);
+      background: transparent;
+      color: var(--muted);
+      font-weight: 900;
+    }
+
+    .bottom-nav button.is-active {
       color: var(--red);
+      background: rgba(215,25,32,.08);
     }
 
-    @keyframes pop {
-      0% { transform: rotate(-2deg) scale(.96); }
-      55% { transform: rotate(2deg) scale(1.04); }
-      100% { transform: rotate(-2deg) scale(1); }
+    @keyframes dealIn {
+      0% {
+        opacity: 0;
+        transform: translateY(70px) rotate(0deg) scale(.78) rotateY(75deg);
+        filter: blur(4px);
+      }
+      64% {
+        opacity: 1;
+        filter: blur(0);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0) rotate(var(--rotate)) scale(1) rotateY(0deg);
+      }
     }
 
-    @keyframes rise {
-      from { opacity: 0; transform: translateY(12px); }
+    @keyframes toastIn {
+      from { opacity: 0; transform: translateY(16px); }
       to { opacity: 1; transform: translateY(0); }
     }
 
-    @media (max-width: 1050px) {
-      .app,
-      .playmat {
+    @media (max-width: 1120px) {
+      .workspace {
         grid-template-columns: 1fr;
       }
 
-      .rail {
+      .side-panel {
         position: static;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
     }
 
-    @media (max-width: 720px) {
-      .topbar,
-      .zone-head {
-        grid-template-columns: 1fr;
+    @media (max-width: 820px) {
+      .app {
+        grid-template-rows: auto minmax(0, 1fr) auto;
       }
 
-      .actions {
+      .topbar {
+        grid-template-columns: 1fr;
+        align-items: start;
+      }
+
+      .status {
         justify-content: stretch;
       }
 
-      .actions button {
+      .status-chip,
+      .age-toggle {
         flex: 1;
       }
 
-      .card-grid,
-      .pack-tabs,
-      .stats {
+      .workspace {
+        width: min(100% - 16px, 620px);
+        padding-bottom: 76px;
+      }
+
+      .stage-shell,
+      .stage-ui {
+        min-height: 760px;
+      }
+
+      .stage-ui {
         grid-template-columns: 1fr;
+        align-content: start;
+      }
+
+      .pack-console {
+        align-content: start;
+      }
+
+      .pack-title {
+        font-size: clamp(2.4rem, 13vw, 4.2rem);
+      }
+
+      .reveal-slots {
+        min-height: 0;
+        grid-template-columns: repeat(3, minmax(154px, 1fr));
+        overflow-x: auto;
+        padding-bottom: 6px;
+      }
+
+      .slot {
+        min-width: 154px;
+        min-height: 236px;
+      }
+
+      .revealed-card {
+        min-width: 154px;
+      }
+
+      .pack-carousel {
+        grid-template-columns: none;
+        grid-auto-flow: column;
+        grid-auto-columns: minmax(162px, 54vw);
+      }
+
+      .side-panel {
+        grid-template-columns: 1fr;
+      }
+
+      .bottom-nav {
+        display: grid;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after {
+        animation-duration: 1ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+        transition-duration: 1ms !important;
       }
     }
   </style>
 </head>
 <body>
   <main class="app">
-    <section class="main">
-      <header class="topbar">
-        <div class="brand">
+    <header class="topbar">
+      <div class="brand">
+        <i class="mark" aria-hidden="true"></i>
+        <div class="title">
           <b>אוספים עובדות</b>
-          <span>בנק הפועלים לילדים: מושגים, בחירות והרגלים כספיים</span>
+          <span>בנק הפועלים לילדים · איסוף, החלטות וחידונים</span>
         </div>
-        <div class="actions">
-          <button class="primary" id="openPack" type="button">פתח חבילה</button>
-          <button class="secondary" id="nextPack" type="button">חבילה אחרת</button>
-        </div>
-      </header>
+      </div>
+      <section class="status" aria-label="סטטוס שחקן">
+        <div class="status-chip"><span>מטבעות</span><b id="coinCount">120</b></div>
+        <div class="status-chip"><span>נאספו</span><b id="ownedCount">0/50</b></div>
+        <select class="age-toggle" id="ageMode" aria-label="רמת גיל">
+          <option value="junior">צעירים</option>
+          <option value="child" selected>ילדים</option>
+          <option value="advanced">מתקדמים</option>
+        </select>
+      </section>
+    </header>
 
-      <section class="playmat" aria-label="משחק פתיחת חבילות">
-        <section class="pack-stage">
-          <h1 id="packTitle">טוען חבילות</h1>
-          <p id="packDescription">החבילות נטענות מתוך נתוני העונה.</p>
-          <img class="pack-image" id="packImage" src="" width="512" height="716" alt="">
-        </section>
-
-        <section class="card-zone">
-          <div class="zone-head">
-            <div>
-              <h2 id="revealTitle">קלפים שיצאו עכשיו</h2>
-              <span id="revealSubtitle">פותחים חבילה כדי לקבל שלושה מושגים פיננסיים.</span>
+    <section class="workspace">
+      <section class="game-surface" id="packsView">
+        <article class="stage-shell">
+          <canvas id="threeStage" aria-hidden="true"></canvas>
+          <section class="stage-ui">
+            <div class="pack-console">
+              <span class="pack-kicker" id="packKicker">חבילת למידה</span>
+              <h1 class="pack-title" id="packTitle">טוען חבילה</h1>
+              <p class="pack-description" id="packDescription">פותחים חבילה, אוספים מושגים, ואז עוברים לחידון קצר.</p>
+              <div class="stage-actions">
+                <button class="primary" id="openPack" type="button">פתח חבילה · 20★</button>
+                <button class="secondary" id="quizButton" type="button">חידון על קלף</button>
+                <button class="secondary" id="nextPack" type="button">חבילה אחרת</button>
+              </div>
+              <div class="reward-strip" aria-live="polite">
+                <span class="reward-pill">פתיחות <b id="openedCount">0</b></span>
+                <span class="reward-pill">חדשים היום <b id="newToday">0</b></span>
+                <span class="reward-pill">כפולים <b id="duplicateCount">0</b></span>
+              </div>
             </div>
-            <button class="primary" id="openPackSecondary" type="button">פתח עכשיו</button>
+
+            <div class="reveal-board">
+              <div class="reveal-head">
+                <div>
+                  <h2 id="revealTitle">במת פתיחה</h2>
+                  <span id="revealSubtitle">בחר חבילה ופתח שלושה קלפים.</span>
+                </div>
+                <button class="icon-button" id="resetButton" type="button" title="איפוס סשן">↻</button>
+              </div>
+              <div class="reveal-slots" id="revealSlots" aria-live="polite"></div>
+            </div>
+          </section>
+        </article>
+
+        <section class="pack-dock" aria-label="בחירת חבילות">
+          <div class="dock-head">
+            <b>חבילות עונה 1</b>
+            <span class="mini-label" id="dockStatus">0 חבילות זמינות</span>
           </div>
-          <div class="card-grid" id="cardGrid" aria-live="polite"></div>
-          <div class="pack-tabs" id="packTabs" aria-label="בחירת חבילה"></div>
+          <div class="pack-carousel" id="packCarousel"></div>
         </section>
       </section>
+
+      <aside class="side-panel" id="collectionView">
+        <section class="panel-block">
+          <div class="panel-title">
+            <h2>האוסף שלי</h2>
+            <span class="mini-label" id="masteryLabel">0%</span>
+          </div>
+          <div class="progress-ring" id="progressRing"><b id="progressText">0%</b></div>
+          <div class="set-list" id="setList"></div>
+        </section>
+
+        <section class="panel-block" id="missionsView">
+          <div class="panel-title">
+            <h3>משימות</h3>
+            <span class="mini-label">היום</span>
+          </div>
+          <div class="mission-list">
+            <article class="mission">
+              <header><b>פותחים חבילה</b><span id="missionOpen">0/1</span></header>
+              <small>קבל שלושה מושגים חדשים או כפולים.</small>
+              <div class="meter"><i id="missionOpenBar"></i></div>
+            </article>
+            <article class="mission">
+              <header><b>אוספים סט</b><span id="missionSet">0/10</span></header>
+              <small>השלם את החבילה הנבחרת.</small>
+              <div class="meter"><i id="missionSetBar"></i></div>
+            </article>
+            <article class="mission">
+              <header><b>בודקים לפני החלטה</b><span id="missionQuiz">0/1</span></header>
+              <small>פתח חידון על אחד הקלפים שנחשפו.</small>
+              <div class="meter"><i id="missionQuizBar"></i></div>
+            </article>
+          </div>
+        </section>
+      </aside>
     </section>
 
-    <aside class="rail">
-      <h2>מסלול למידה</h2>
-      <div class="stats">
-        <div class="stat"><b id="packCount">0</b><span>חבילות</span></div>
-        <div class="stat"><b id="cardCount">0</b><span>קלפים</span></div>
-        <div class="stat"><b id="openedCount">0</b><span>פתיחות</span></div>
-        <div class="stat"><b id="coins">120</b><span>מטבעות מוח</span></div>
-      </div>
-
-      <section class="mission-list" aria-label="משימות">
-        <article class="mission">
-          <b>בודקים יתרה</b>
-          <span>לפני קנייה או משיכה מסתכלים כמה כסף יש ומה המטרה.</span>
-        </article>
-        <article class="mission">
-          <b>משווים אפשרויות</b>
-          <span>מחיר, זמן, סיכון ותנאים עוזרים לבחור בשקט.</span>
-        </article>
-        <article class="mission">
-          <b>שומרים על פרטים</b>
-          <span>סיסמה, קוד וקישור חשוד מקבלים עצירת בדיקה.</span>
-        </article>
-      </section>
-    </aside>
+    <nav class="bottom-nav" aria-label="ניווט">
+      <button class="is-active" type="button" data-jump="packsView">חבילות</button>
+      <button type="button" data-jump="collectionView">האוסף</button>
+      <button type="button" data-jump="missionsView">משימות</button>
+      <button type="button" data-action="open">פתח</button>
+    </nav>
   </main>
 
+  <div class="toast-stack" id="toastStack"></div>
+
   <script src="assets/season-1/game-data.js"></script>
-  <script>
-    const gameData = window.MVP_GAME_DATA || { packs: [], mvp_rules: { starter_coins: 120, pack_size: 3 } };
-    const colors = ["#d71920", "#c7181f", "#b4232a", "#9d161b", "#5f6670"];
-    const packs = gameData.packs.map((pack, index) => ({
-      ...pack,
-      color: colors[index % colors.length],
-      cards: pack.cards || []
-    }));
+  <script type="module">
+    const gameData = window.MVP_GAME_DATA || { packs: [], mvp_rules: { starter_coins: 120, pack_size: 3, pack_cost: 20 } };
+    const packCost = gameData.mvp_rules?.pack_cost || 20;
+    const packSize = gameData.mvp_rules?.pack_size || 3;
+    const allCards = gameData.packs.flatMap((pack) => pack.cards.map((card) => ({ ...card, pack_id: pack.pack_id })));
 
     const state = {
-      activePackIndex: 0,
-      opened: Number(localStorage.getItem("poalimOpenedPacks") || "0"),
+      activePackIndex: Number(localStorage.getItem("poalimActivePack") || "0"),
       coins: Number(localStorage.getItem("poalimCoins") || gameData.mvp_rules?.starter_coins || "120"),
+      opened: Number(localStorage.getItem("poalimOpenedPacks") || "0"),
+      newToday: Number(localStorage.getItem("poalimNewToday") || "0"),
+      duplicates: Number(localStorage.getItem("poalimDuplicates") || "0"),
+      quizDone: Number(localStorage.getItem("poalimQuizDone") || "0"),
+      owned: new Set(JSON.parse(localStorage.getItem("poalimOwnedCards") || "[]")),
       currentCards: []
     };
 
     const els = {
+      coinCount: document.querySelector("#coinCount"),
+      ownedCount: document.querySelector("#ownedCount"),
+      openedCount: document.querySelector("#openedCount"),
+      newToday: document.querySelector("#newToday"),
+      duplicateCount: document.querySelector("#duplicateCount"),
+      ageMode: document.querySelector("#ageMode"),
+      packKicker: document.querySelector("#packKicker"),
       packTitle: document.querySelector("#packTitle"),
       packDescription: document.querySelector("#packDescription"),
-      packImage: document.querySelector("#packImage"),
-      cardGrid: document.querySelector("#cardGrid"),
-      packTabs: document.querySelector("#packTabs"),
+      openPack: document.querySelector("#openPack"),
+      quizButton: document.querySelector("#quizButton"),
+      nextPack: document.querySelector("#nextPack"),
+      resetButton: document.querySelector("#resetButton"),
       revealTitle: document.querySelector("#revealTitle"),
       revealSubtitle: document.querySelector("#revealSubtitle"),
-      packCount: document.querySelector("#packCount"),
-      cardCount: document.querySelector("#cardCount"),
-      openedCount: document.querySelector("#openedCount"),
-      coins: document.querySelector("#coins")
+      revealSlots: document.querySelector("#revealSlots"),
+      packCarousel: document.querySelector("#packCarousel"),
+      dockStatus: document.querySelector("#dockStatus"),
+      setList: document.querySelector("#setList"),
+      masteryLabel: document.querySelector("#masteryLabel"),
+      progressRing: document.querySelector("#progressRing"),
+      progressText: document.querySelector("#progressText"),
+      missionOpen: document.querySelector("#missionOpen"),
+      missionOpenBar: document.querySelector("#missionOpenBar"),
+      missionSet: document.querySelector("#missionSet"),
+      missionSetBar: document.querySelector("#missionSetBar"),
+      missionQuiz: document.querySelector("#missionQuiz"),
+      missionQuizBar: document.querySelector("#missionQuizBar"),
+      toastStack: document.querySelector("#toastStack")
+    };
+
+    const packs = gameData.packs || [];
+    const clampPackIndex = () => {
+      state.activePackIndex = Math.max(0, Math.min(state.activePackIndex, packs.length - 1));
     };
 
     function activePack() {
+      clampPackIndex();
       return packs[state.activePackIndex] || null;
     }
 
-    function shuffledCards(pack) {
-      return [...pack.cards].sort(() => Math.random() - 0.5).slice(0, Math.min(gameData.mvp_rules?.pack_size || 3, pack.cards.length));
-    }
-
     function save() {
-      localStorage.setItem("poalimOpenedPacks", String(state.opened));
+      localStorage.setItem("poalimActivePack", String(state.activePackIndex));
       localStorage.setItem("poalimCoins", String(state.coins));
+      localStorage.setItem("poalimOpenedPacks", String(state.opened));
+      localStorage.setItem("poalimNewToday", String(state.newToday));
+      localStorage.setItem("poalimDuplicates", String(state.duplicates));
+      localStorage.setItem("poalimQuizDone", String(state.quizDone));
+      localStorage.setItem("poalimOwnedCards", JSON.stringify([...state.owned]));
     }
 
-    function renderEmptyCards() {
-      els.cardGrid.innerHTML = "";
-      for (let i = 0; i < 3; i += 1) {
-        const item = document.createElement("div");
-        item.className = "empty";
-        item.textContent = "ממתין לפתיחה";
-        els.cardGrid.append(item);
+    function packName(pack) {
+      return pack.pack_title_he.replace("בנק הפועלים: ", "");
+    }
+
+    function drawCards(pack) {
+      const deck = [...pack.cards];
+      for (let i = deck.length - 1; i > 0; i -= 1) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [deck[i], deck[j]] = [deck[j], deck[i]];
       }
+      return deck.slice(0, Math.min(packSize, deck.length));
+    }
+
+    function ownedInPack(pack) {
+      return pack.cards.filter((card) => state.owned.has(card.card_id)).length;
+    }
+
+    function toast(message) {
+      const item = document.createElement("div");
+      item.className = "toast";
+      item.textContent = message;
+      els.toastStack.append(item);
+      window.setTimeout(() => {
+        item.style.opacity = "0";
+        item.style.transform = "translateY(12px)";
+        window.setTimeout(() => item.remove(), 220);
+      }, 2600);
+    }
+
+    function renderEmptySlots() {
+      els.revealSlots.innerHTML = "";
+      for (let i = 0; i < packSize; i += 1) {
+        const slot = document.createElement("div");
+        slot.className = "slot";
+        slot.style.setProperty("--angle", `${[-5, 1, 6][i] || 0}deg`);
+        slot.setAttribute("aria-label", "מקום לקלף");
+        els.revealSlots.append(slot);
+      }
+    }
+
+    function renderRevealed() {
+      const pack = activePack();
+      els.revealTitle.textContent = `יצאו מ${packName(pack)}`;
+      els.revealSubtitle.textContent = state.currentCards.length
+        ? "קלפים חדשים נשמרים באוסף, כפולים מחזירים מטבעות."
+        : "בחר חבילה ופתח שלושה קלפים.";
+      els.revealSlots.innerHTML = "";
+      if (!state.currentCards.length) {
+        renderEmptySlots();
+        return;
+      }
+      state.currentCards.forEach((entry) => {
+        const card = entry.card;
+        const item = document.createElement("article");
+        item.className = "revealed-card";
+        item.innerHTML = `
+          <img src="${card.asset_path}" alt="${card.title_he}" loading="lazy" decoding="async">
+          <span class="card-state ${entry.duplicate ? "duplicate" : ""}">${entry.duplicate ? "כפול" : "חדש"}</span>
+          <footer>
+            <b>${card.title_he}</b>
+            <span>${(card.facts_he || [])[0] || ""}</span>
+          </footer>
+        `;
+        els.revealSlots.append(item);
+      });
     }
 
     function renderPack() {
       const pack = activePack();
       if (!pack) return;
-      els.packTitle.textContent = pack.pack_title_he;
+      els.packKicker.textContent = `${ownedInPack(pack)}/${pack.cards.length} באוסף`;
+      els.packTitle.textContent = packName(pack);
       els.packDescription.textContent = pack.domain_he;
-      els.packImage.src = pack.pack_asset_path;
-      els.packImage.alt = pack.pack_title_he;
-      document.documentElement.style.setProperty("--red", pack.color);
-      if (!state.currentCards.length) renderEmptyCards();
-      renderTabs();
+      els.openPack.disabled = state.coins < packCost;
+      els.openPack.textContent = state.coins < packCost ? "אין מספיק מטבעות" : `פתח חבילה · ${packCost}★`;
+      renderCarousel();
+      renderRevealed();
       renderStats();
+      updateThreePack(pack);
     }
 
-    function renderTabs() {
-      els.packTabs.innerHTML = "";
+    function renderCarousel() {
+      els.packCarousel.innerHTML = "";
       packs.forEach((pack, index) => {
+        const owned = ownedInPack(pack);
         const button = document.createElement("button");
-        button.className = `pack-tab${index === state.activePackIndex ? " is-active" : ""}`;
         button.type = "button";
+        button.className = `pack-tile${index === state.activePackIndex ? " is-active" : ""}`;
         button.innerHTML = `
           <img src="${pack.pack_asset_path}" alt="">
-          <span><b>${pack.pack_title_he.replace("בנק הפועלים: ", "")}</b><span>${pack.cards.length} קלפים</span></span>
+          <span>
+            <b>${packName(pack)}</b>
+            <span>${owned}/${pack.cards.length} נאספו</span>
+          </span>
         `;
         button.addEventListener("click", () => selectPack(index));
-        els.packTabs.append(button);
+        els.packCarousel.append(button);
+      });
+      els.dockStatus.textContent = `${packs.length} חבילות זמינות`;
+    }
+
+    function renderSetList() {
+      els.setList.innerHTML = "";
+      packs.forEach((pack) => {
+        const owned = ownedInPack(pack);
+        const percent = Math.round((owned / pack.cards.length) * 100);
+        const row = document.createElement("article");
+        row.className = "set-row";
+        row.innerHTML = `
+          <header><b>${packName(pack)}</b><span>${owned}/${pack.cards.length}</span></header>
+          <div class="meter"><i style="--value:${percent}%"></i></div>
+          <small>${percent === 100 ? "סט מלא, מוכן לחידון מתקדם." : "אסוף עוד קלפים כדי לפתוח שליטה במושגים."}</small>
+        `;
+        els.setList.append(row);
       });
     }
 
     function renderStats() {
-      els.packCount.textContent = packs.length;
-      els.cardCount.textContent = packs.reduce((sum, pack) => sum + pack.cards.length, 0);
-      els.openedCount.textContent = state.opened;
-      els.coins.textContent = state.coins;
-    }
-
-    function renderCards() {
+      const ownedCount = state.owned.size;
+      const total = allCards.length || 1;
+      const percent = Math.round((ownedCount / total) * 100);
       const pack = activePack();
-      els.revealTitle.textContent = `יצאו מ${pack.pack_title_he.replace("בנק הפועלים: ", "")}`;
-      els.revealSubtitle.textContent = "כל קלף מציג מושג, עובדות וטיפ החלטה.";
-      els.cardGrid.innerHTML = "";
-      state.currentCards.forEach((card, index) => {
-        const item = document.createElement("article");
-        item.className = "card-tile";
-        item.style.animationDelay = `${index * 70}ms`;
-        item.innerHTML = `
-          <img src="${card.asset_path}" alt="${card.title_he}" loading="lazy" decoding="async">
-          <b>${card.title_he}</b>
-          <span>${(card.facts_he || [])[0] || ""}</span>
-        `;
-        els.cardGrid.append(item);
-      });
+      const packOwned = pack ? ownedInPack(pack) : 0;
+      els.coinCount.textContent = state.coins;
+      els.ownedCount.textContent = `${ownedCount}/${total}`;
+      els.openedCount.textContent = state.opened;
+      els.newToday.textContent = state.newToday;
+      els.duplicateCount.textContent = state.duplicates;
+      els.masteryLabel.textContent = `${percent}%`;
+      els.progressText.textContent = `${percent}%`;
+      els.progressRing.style.setProperty("--progress", `${percent * 3.6}deg`);
+      els.missionOpen.textContent = `${Math.min(state.opened, 1)}/1`;
+      els.missionOpenBar.style.setProperty("--value", `${Math.min(state.opened, 1) * 100}%`);
+      els.missionSet.textContent = `${packOwned}/10`;
+      els.missionSetBar.style.setProperty("--value", `${Math.min(packOwned, 10) * 10}%`);
+      els.missionQuiz.textContent = `${Math.min(state.quizDone, 1)}/1`;
+      els.missionQuizBar.style.setProperty("--value", `${Math.min(state.quizDone, 1) * 100}%`);
+      renderSetList();
     }
 
     function openPack() {
       const pack = activePack();
-      if (!pack) return;
-      state.currentCards = shuffledCards(pack);
+      if (!pack || state.coins < packCost) {
+        toast("צריך עוד מטבעות כדי לפתוח חבילה.");
+        return;
+      }
+      const drawn = drawCards(pack);
+      let newCount = 0;
+      let duplicateCount = 0;
+      state.coins -= packCost;
+      state.currentCards = drawn.map((card) => {
+        const duplicate = state.owned.has(card.card_id);
+        if (duplicate) {
+          duplicateCount += 1;
+          state.coins += gameData.mvp_rules?.duplicate_reward_coins || 5;
+        } else {
+          newCount += 1;
+          state.owned.add(card.card_id);
+        }
+        return { card, duplicate };
+      });
       state.opened += 1;
-      state.coins = Math.max(0, state.coins - (gameData.mvp_rules?.pack_cost || 20));
+      state.newToday += newCount;
+      state.duplicates += duplicateCount;
       save();
-      els.packImage.classList.remove("is-opening");
-      void els.packImage.offsetWidth;
-      els.packImage.classList.add("is-opening");
-      renderCards();
+      renderRevealed();
       renderStats();
+      renderCarousel();
+      els.openPack.disabled = state.coins < packCost;
+      triggerThreeOpen(state.currentCards.map((entry) => entry.card));
+      toast(newCount ? `נוספו ${newCount} קלפים חדשים לאוסף.` : `כל הקלפים כפולים, קיבלת ${duplicateCount * 5}★ חזרה.`);
     }
 
     function selectPack(index) {
       state.activePackIndex = (index + packs.length) % packs.length;
       state.currentCards = [];
-      els.revealTitle.textContent = "קלפים שיצאו עכשיו";
-      els.revealSubtitle.textContent = "פותחים חבילה כדי לקבל שלושה מושגים פיננסיים.";
+      save();
       renderPack();
     }
 
-    document.querySelector("#openPack").addEventListener("click", openPack);
-    document.querySelector("#openPackSecondary").addEventListener("click", openPack);
-    document.querySelector("#nextPack").addEventListener("click", () => selectPack(state.activePackIndex + 1));
+    function resetSession() {
+      state.currentCards = [];
+      renderRevealed();
+      toast("במת הפתיחה אופסה.");
+    }
 
+    function startQuiz() {
+      const card = state.currentCards[0]?.card || activePack()?.cards.find((item) => state.owned.has(item.card_id));
+      if (!card) {
+        toast("פתח קלף קודם, ואז יהיה חידון.");
+        return;
+      }
+      const tier = els.ageMode.value;
+      const quiz = card.quizzes?.[tier] || card.quizzes?.child;
+      state.quizDone = 1;
+      state.coins += gameData.mvp_rules?.quiz_reward_brain_coins || 25;
+      save();
+      renderStats();
+      toast(`${quiz?.question_he || "שאלת חידון"} · קיבלת מטבעות אימון.`);
+    }
+
+    els.openPack.addEventListener("click", openPack);
+    document.querySelector("#nextPack").addEventListener("click", () => selectPack(state.activePackIndex + 1));
+    els.resetButton.addEventListener("click", resetSession);
+    els.quizButton.addEventListener("click", startQuiz);
+    document.querySelectorAll(".bottom-nav button").forEach((button) => {
+      button.addEventListener("click", () => {
+        document.querySelectorAll(".bottom-nav button").forEach((item) => item.classList.remove("is-active"));
+        button.classList.add("is-active");
+        if (button.dataset.action === "open") openPack();
+        if (button.dataset.jump) document.querySelector(`#${button.dataset.jump}`)?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
+    });
+
+    let THREE;
+    let renderer;
+    let scene;
+    let camera;
+    let packMesh;
+    let stageGroup;
+    let cardMeshes = [];
+    let openPulse = 0;
+    const textureCache = new Map();
+    const canvas = document.querySelector("#threeStage");
+
+    async function initThree() {
+      try {
+        THREE = await import("https://unpkg.com/three@0.164.1/build/three.module.js");
+      } catch {
+        canvas.style.display = "none";
+        return;
+      }
+      renderer = new THREE.WebGLRenderer({ canvas, antialias: true, alpha: true });
+      renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
+      scene = new THREE.Scene();
+      camera = new THREE.PerspectiveCamera(38, 1, 0.1, 100);
+      camera.position.set(0, 0.35, 7.2);
+      stageGroup = new THREE.Group();
+      scene.add(stageGroup);
+      scene.add(new THREE.AmbientLight(0xffffff, 1.4));
+      const key = new THREE.PointLight(0xffd27a, 8, 12);
+      key.position.set(-2.6, 3.4, 4);
+      scene.add(key);
+      const red = new THREE.PointLight(0xd71920, 5, 9);
+      red.position.set(3, -1, 3);
+      scene.add(red);
+      const floorGeo = new THREE.CircleGeometry(3.7, 80);
+      const floorMat = new THREE.MeshBasicMaterial({ color: 0xffffff, transparent: true, opacity: .08 });
+      const floor = new THREE.Mesh(floorGeo, floorMat);
+      floor.rotation.x = -Math.PI / 2;
+      floor.position.y = -2.15;
+      stageGroup.add(floor);
+      drawCoins();
+      updateThreePack(activePack());
+      resizeThree();
+      window.addEventListener("resize", resizeThree);
+      animateThree();
+    }
+
+    function texture(path) {
+      if (!THREE || !path) return null;
+      if (textureCache.has(path)) return textureCache.get(path);
+      const loaded = new THREE.TextureLoader().load(path);
+      loaded.colorSpace = THREE.SRGBColorSpace;
+      loaded.anisotropy = 8;
+      textureCache.set(path, loaded);
+      return loaded;
+    }
+
+    function makePlane(path, width, height) {
+      const map = texture(path);
+      const mat = new THREE.MeshStandardMaterial({
+        map,
+        transparent: true,
+        roughness: .42,
+        metalness: .06,
+        side: THREE.DoubleSide
+      });
+      return new THREE.Mesh(new THREE.PlaneGeometry(width, height), mat);
+    }
+
+    function updateThreePack(pack) {
+      if (!THREE || !stageGroup || !pack) return;
+      if (packMesh) stageGroup.remove(packMesh);
+      packMesh = makePlane(pack.pack_asset_path, 2.1, 2.94);
+      packMesh.position.set(-1.95, -.12, .3);
+      packMesh.rotation.set(-.08, .26, -.07);
+      stageGroup.add(packMesh);
+      cardMeshes.forEach((mesh) => stageGroup.remove(mesh));
+      cardMeshes = [];
+    }
+
+    function drawCoins() {
+      if (!THREE || !stageGroup) return;
+      const coinGeo = new THREE.CylinderGeometry(.18, .18, .045, 32);
+      const coinMat = new THREE.MeshStandardMaterial({ color: 0xf2c24f, metalness: .78, roughness: .28 });
+      for (let i = 0; i < 18; i += 1) {
+        const coin = new THREE.Mesh(coinGeo, coinMat);
+        coin.position.set(-3.1 + Math.random() * 6.1, -1.9 + Math.random() * .25, -1.2 + Math.random() * 1.2);
+        coin.rotation.set(Math.PI / 2, 0, Math.random() * Math.PI);
+        coin.scale.setScalar(.72 + Math.random() * .45);
+        stageGroup.add(coin);
+      }
+    }
+
+    function triggerThreeOpen(cards) {
+      if (!THREE || !stageGroup) return;
+      openPulse = 1;
+      cardMeshes.forEach((mesh) => stageGroup.remove(mesh));
+      cardMeshes = cards.map((card, index) => {
+        const mesh = makePlane(card.asset_path, 1.12, 1.57);
+        mesh.userData = {
+          targetX: .25 + index * 1.12,
+          targetY: -.18 + (index === 1 ? .16 : 0),
+          targetRot: [-.22, .02, .22][index] || 0,
+          phase: 0
+        };
+        mesh.position.set(-1.68, -.05, .65 + index * .02);
+        mesh.rotation.set(0, Math.PI * .92, 0);
+        stageGroup.add(mesh);
+        return mesh;
+      });
+    }
+
+    function resizeThree() {
+      if (!renderer || !camera) return;
+      const rect = canvas.getBoundingClientRect();
+      renderer.setSize(rect.width, rect.height, false);
+      camera.aspect = rect.width / Math.max(rect.height, 1);
+      camera.updateProjectionMatrix();
+    }
+
+    function animateThree(time = 0) {
+      requestAnimationFrame(animateThree);
+      if (!renderer || !scene || !camera) return;
+      const t = time * .001;
+      if (stageGroup) {
+        stageGroup.rotation.y = Math.sin(t * .35) * .035;
+      }
+      if (packMesh) {
+        packMesh.position.y = -.12 + Math.sin(t * 2.1) * .055 + openPulse * Math.sin(t * 30) * .035;
+        packMesh.rotation.z = -.07 + Math.sin(t * 1.4) * .035 + openPulse * Math.sin(t * 28) * .04;
+      }
+      if (openPulse > 0) openPulse *= .94;
+      cardMeshes.forEach((mesh, index) => {
+        mesh.userData.phase = Math.min(1, mesh.userData.phase + .026 + index * .002);
+        const p = easeOutBack(mesh.userData.phase);
+        mesh.position.x = lerp(-1.68, mesh.userData.targetX, p);
+        mesh.position.y = lerp(-.05, mesh.userData.targetY, p);
+        mesh.position.z = lerp(.7, 1.15 + index * .04, p);
+        mesh.rotation.y = lerp(Math.PI * .92, 0, p);
+        mesh.rotation.z = lerp(0, mesh.userData.targetRot, p);
+      });
+      renderer.render(scene, camera);
+    }
+
+    function lerp(a, b, t) {
+      return a + (b - a) * t;
+    }
+
+    function easeOutBack(x) {
+      const c1 = 1.70158;
+      const c3 = c1 + 1;
+      return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2);
+    }
+
+    renderEmptySlots();
     renderPack();
+    initThree();
   </script>
 </body>
 </html>
