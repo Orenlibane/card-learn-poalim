@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "product_name_he": "אוספים עובדות",
+  "language": "he",
+  "text_direction": "rtl",
+  "season": 1,
+  "pack_id": "poalim-saving-choices",
+  "pack_title_he": "בנק הפועלים: חיסכון ובחירות",
+  "domain_he": "תקציב, חיסכון וקבלת החלטות",
+  "age_group_he": "ילדים 6-12",
+  "pack_asset_path": "assets/season-1/packs-poalim/pack-poalim-saving-choices.webp",
+  "card_count": 10,
+  "quiz_flow_he": "תמונת הקלף מציגה מושג, עובדות וטיפ החלטה. הבוחן מלמד ילדים לבדוק, להשוות ולשאול לפני פעולה כספית.",
+  "financial_note_he": "תוכן חינוכי בלבד. אין כאן ייעוץ פיננסי, תנאי מוצר, ריבית עדכנית או המלצה לבצע פעולה בבנק.",
+  "cards": [
+    {
+      "card_id": "poalim-saving-choices-01-budget",
+      "index": 1,
+      "title_he": "תקציב",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/01-budget.webp",
+      "facts_he": [
+        "תקציב הוא תוכנית לכסף",
+        "מחלקים כסף לקנייה, חיסכון ונתינה",
+        "תקציב עוזר לבחור בלי לחץ"
+      ],
+      "tags_he": [
+        "תכנון",
+        "בחירה"
+      ],
+      "decision_tip_he": "נותנים לכל שקל תפקיד לפני שיוצאים לקנות.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי תקציב?",
+          "options_he": [
+            "תקציב הוא תוכנית לכסף",
+            "תמיד מתעלמים מתקציב.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "תקציב הוא תוכנית לכסף"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לתקציב?",
+          "options_he": [
+            "נותנים לכל שקל תפקיד לפני שיוצאים לקנות.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "נותנים לכל שקל תפקיד לפני שיוצאים לקנות."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על תקציב?",
+          "options_he": [
+            "מחלקים כסף לקנייה, חיסכון ונתינה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "תקציב עוזר לבחור בלי לחץ אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מחלקים כסף לקנייה, חיסכון ונתינה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-02-needs-wants",
+      "index": 2,
+      "title_he": "צריך או רוצה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/02-needs-wants.webp",
+      "facts_he": [
+        "צורך הוא דבר חשוב באמת",
+        "רצון הוא דבר שכיף לקבל",
+        "מחליטים קודם על צרכים ואז על רצונות"
+      ],
+      "tags_he": [
+        "עדיפות",
+        "שיקול דעת"
+      ],
+      "decision_tip_he": "אם מתלבטים, שואלים: מה יקרה אם אחכה?",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי צריך או רוצה?",
+          "options_he": [
+            "צורך הוא דבר חשוב באמת",
+            "תמיד מתעלמים מצריך או רוצה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "צורך הוא דבר חשוב באמת"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לצריך או רוצה?",
+          "options_he": [
+            "אם מתלבטים, שואלים: מה יקרה אם אחכה?",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אם מתלבטים, שואלים: מה יקרה אם אחכה?"
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על צריך או רוצה?",
+          "options_he": [
+            "רצון הוא דבר שכיף לקבל, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מחליטים קודם על צרכים ואז על רצונות אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "רצון הוא דבר שכיף לקבל"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-03-saving",
+      "index": 3,
+      "title_he": "חיסכון",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/03-saving.webp",
+      "facts_he": [
+        "חיסכון הוא כסף ששומרים למטרה",
+        "גם סכומים קטנים מצטברים",
+        "קל יותר לחסוך כשיש יעד"
+      ],
+      "tags_he": [
+        "התמדה",
+        "מטרה"
+      ],
+      "decision_tip_he": "כל מטבע קטן הוא צעד במסלול.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי חיסכון?",
+          "options_he": [
+            "חיסכון הוא כסף ששומרים למטרה",
+            "תמיד מתעלמים מחיסכון.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "חיסכון הוא כסף ששומרים למטרה"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לחיסכון?",
+          "options_he": [
+            "כל מטבע קטן הוא צעד במסלול.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כל מטבע קטן הוא צעד במסלול."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על חיסכון?",
+          "options_he": [
+            "גם סכומים קטנים מצטברים, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "קל יותר לחסוך כשיש יעד אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "גם סכומים קטנים מצטברים"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-04-interest",
+      "index": 4,
+      "title_he": "ריבית",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/04-interest.webp",
+      "facts_he": [
+        "ריבית היא כסף שמתווסף או משולם על כסף",
+        "בחיסכון ריבית יכולה להגדיל סכום",
+        "בהלוואה ריבית מגדילה החזר"
+      ],
+      "tags_he": [
+        "ריבית",
+        "זמן"
+      ],
+      "decision_tip_he": "אותה מילה יכולה לעזור או לעלות כסף, תלוי בהחלטה.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי ריבית?",
+          "options_he": [
+            "ריבית היא כסף שמתווסף או משולם על כסף",
+            "תמיד מתעלמים מריבית.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "ריבית היא כסף שמתווסף או משולם על כסף"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לריבית?",
+          "options_he": [
+            "אותה מילה יכולה לעזור או לעלות כסף, תלוי בהחלטה.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אותה מילה יכולה לעזור או לעלות כסף, תלוי בהחלטה."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על ריבית?",
+          "options_he": [
+            "בחיסכון ריבית יכולה להגדיל סכום, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בהלוואה ריבית מגדילה החזר אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בחיסכון ריבית יכולה להגדיל סכום"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-05-deposit-plan",
+      "index": 5,
+      "title_he": "פיקדון",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/05-deposit-plan.webp",
+      "facts_he": [
+        "פיקדון שומר כסף לתקופה מוסכמת",
+        "לפעמים אי אפשר למשוך מיד",
+        "בודקים תנאים לפני שמפקידים"
+      ],
+      "tags_he": [
+        "פיקדון",
+        "תנאים"
+      ],
+      "decision_tip_he": "לא נועלים כסף שצריך מחר.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי פיקדון?",
+          "options_he": [
+            "פיקדון שומר כסף לתקופה מוסכמת",
+            "תמיד מתעלמים מפיקדון.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "פיקדון שומר כסף לתקופה מוסכמת"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לפיקדון?",
+          "options_he": [
+            "לא נועלים כסף שצריך מחר.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לא נועלים כסף שצריך מחר."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על פיקדון?",
+          "options_he": [
+            "לפעמים אי אפשר למשוך מיד, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים תנאים לפני שמפקידים אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לפעמים אי אפשר למשוך מיד"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-06-automatic-saving",
+      "index": 6,
+      "title_he": "חיסכון אוטומטי",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/06-automatic-saving.webp",
+      "facts_he": [
+        "אפשר להעביר סכום קבוע לחיסכון",
+        "הרגל קבוע מקל על התמדה",
+        "מתחילים מסכום שמתאים לתקציב"
+      ],
+      "tags_he": [
+        "הרגל",
+        "אוטומטי"
+      ],
+      "decision_tip_he": "חיסכון קטן וקבוע מנצח שכחה.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי חיסכון אוטומטי?",
+          "options_he": [
+            "אפשר להעביר סכום קבוע לחיסכון",
+            "תמיד מתעלמים מחיסכון אוטומטי.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אפשר להעביר סכום קבוע לחיסכון"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לחיסכון אוטומטי?",
+          "options_he": [
+            "חיסכון קטן וקבוע מנצח שכחה.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "חיסכון קטן וקבוע מנצח שכחה."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על חיסכון אוטומטי?",
+          "options_he": [
+            "הרגל קבוע מקל על התמדה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מתחילים מסכום שמתאים לתקציב אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הרגל קבוע מקל על התמדה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-07-emergency-cushion",
+      "index": 7,
+      "title_he": "כרית ביטחון",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/07-emergency-cushion.webp",
+      "facts_he": [
+        "כרית ביטחון היא כסף למצבים מפתיעים",
+        "היא עוזרת לא להיבהל מהוצאה פתאומית",
+        "שומרים אותה לפני קניות לא דחופות"
+      ],
+      "tags_he": [
+        "ביטחון",
+        "עתיד"
+      ],
+      "decision_tip_he": "הפתעה קטנה פחות מלחיצה כשיש כרית מוכנה.",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי כרית ביטחון?",
+          "options_he": [
+            "כרית ביטחון היא כסף למצבים מפתיעים",
+            "תמיד מתעלמים מכרית ביטחון.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כרית ביטחון היא כסף למצבים מפתיעים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לכרית ביטחון?",
+          "options_he": [
+            "הפתעה קטנה פחות מלחיצה כשיש כרית מוכנה.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הפתעה קטנה פחות מלחיצה כשיש כרית מוכנה."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על כרית ביטחון?",
+          "options_he": [
+            "היא עוזרת לא להיבהל מהוצאה פתאומית, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "שומרים אותה לפני קניות לא דחופות אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "היא עוזרת לא להיבהל מהוצאה פתאומית"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-08-price-check",
+      "index": 8,
+      "title_he": "השוואת מחירים",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/08-price-check.webp",
+      "facts_he": [
+        "בודקים מחיר לפני שקונים",
+        "אותו מוצר יכול לעלות אחרת במקומות שונים",
+        "השוואה משאירה יותר כסף לחיסכון"
+      ],
+      "tags_he": [
+        "צרכנות",
+        "בדיקה"
+      ],
+      "decision_tip_he": "לפעמים שתי דקות בדיקה שוות כמה מטבעות.",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי השוואת מחירים?",
+          "options_he": [
+            "בודקים מחיר לפני שקונים",
+            "תמיד מתעלמים מהשוואת מחירים.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בודקים מחיר לפני שקונים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להשוואת מחירים?",
+          "options_he": [
+            "לפעמים שתי דקות בדיקה שוות כמה מטבעות.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לפעמים שתי דקות בדיקה שוות כמה מטבעות."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על השוואת מחירים?",
+          "options_he": [
+            "אותו מוצר יכול לעלות אחרת במקומות שונים, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "השוואה משאירה יותר כסף לחיסכון אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אותו מוצר יכול לעלות אחרת במקומות שונים"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-09-opportunity-cost",
+      "index": 9,
+      "title_he": "בחירה בין דברים",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/09-opportunity-cost.webp",
+      "facts_he": [
+        "כשקונים דבר אחד מוותרים על דבר אחר",
+        "לכל בחירה יש מחיר וגם רווח",
+        "מחשבים מה הכי חשוב עכשיו"
+      ],
+      "tags_he": [
+        "ויתור",
+        "החלטה"
+      ],
+      "decision_tip_he": "בחירה טובה היא לדעת על מה ויתרנו.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי בחירה בין דברים?",
+          "options_he": [
+            "כשקונים דבר אחד מוותרים על דבר אחר",
+            "תמיד מתעלמים מבחירה בין דברים.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כשקונים דבר אחד מוותרים על דבר אחר"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לבחירה בין דברים?",
+          "options_he": [
+            "בחירה טובה היא לדעת על מה ויתרנו.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בחירה טובה היא לדעת על מה ויתרנו."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על בחירה בין דברים?",
+          "options_he": [
+            "לכל בחירה יש מחיר וגם רווח, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מחשבים מה הכי חשוב עכשיו אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לכל בחירה יש מחיר וגם רווח"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-saving-choices-10-smart-delay",
+      "index": 10,
+      "title_he": "לחכות רגע",
+      "asset_path": "assets/season-1/cards-poalim/poalim-saving-choices/10-smart-delay.webp",
+      "facts_he": [
+        "המתנה קצרה עוזרת להחליט בשקט",
+        "לא כל מבצע מתאים לנו",
+        "מחשבה לפני קנייה חוסכת חרטה"
+      ],
+      "tags_he": [
+        "סבלנות",
+        "קנייה"
+      ],
+      "decision_tip_he": "חוק המשחק: מחכים עשר דקות לפני קנייה לא מתוכננת.",
+      "rarity": "legendary",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי לחכות רגע?",
+          "options_he": [
+            "המתנה קצרה עוזרת להחליט בשקט",
+            "תמיד מתעלמים מלחכות רגע.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "המתנה קצרה עוזרת להחליט בשקט"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה ללחכות רגע?",
+          "options_he": [
+            "חוק המשחק: מחכים עשר דקות לפני קנייה לא מתוכננת.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "חוק המשחק: מחכים עשר דקות לפני קנייה לא מתוכננת."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על לחכות רגע?",
+          "options_he": [
+            "לא כל מבצע מתאים לנו, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מחשבה לפני קנייה חוסכת חרטה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לא כל מבצע מתאים לנו"
+        }
+      }
+    }
+  ]
+}

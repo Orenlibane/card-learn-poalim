@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "product_name_he": "אוספים עובדות",
+  "language": "he",
+  "text_direction": "rtl",
+  "season": 1,
+  "pack_id": "poalim-payments-cards",
+  "pack_title_he": "בנק הפועלים: תשלומים וכרטיסים",
+  "domain_he": "דרכי תשלום, כרטיסים ועמלות",
+  "age_group_he": "ילדים 8-12",
+  "pack_asset_path": "assets/season-1/packs-poalim/pack-poalim-payments-cards.webp",
+  "card_count": 10,
+  "quiz_flow_he": "תמונת הקלף מציגה מושג, עובדות וטיפ החלטה. הבוחן מלמד ילדים לבדוק, להשוות ולשאול לפני פעולה כספית.",
+  "financial_note_he": "תוכן חינוכי בלבד. אין כאן ייעוץ פיננסי, תנאי מוצר, ריבית עדכנית או המלצה לבצע פעולה בבנק.",
+  "cards": [
+    {
+      "card_id": "poalim-payments-cards-01-cash",
+      "index": 1,
+      "title_he": "מזומן",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/01-cash.webp",
+      "facts_he": [
+        "מזומן הוא כסף פיזי ביד",
+        "קל לראות כמה נשאר בארנק",
+        "מזומן שאבד קשה להחזיר"
+      ],
+      "tags_he": [
+        "מזומן",
+        "ארנק"
+      ],
+      "decision_tip_he": "סופרים עודף לפני שעוזבים את הקופה.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי מזומן?",
+          "options_he": [
+            "מזומן הוא כסף פיזי ביד",
+            "תמיד מתעלמים ממזומן.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מזומן הוא כסף פיזי ביד"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה למזומן?",
+          "options_he": [
+            "סופרים עודף לפני שעוזבים את הקופה.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "סופרים עודף לפני שעוזבים את הקופה."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על מזומן?",
+          "options_he": [
+            "קל לראות כמה נשאר בארנק, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מזומן שאבד קשה להחזיר אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "קל לראות כמה נשאר בארנק"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-02-debit-card",
+      "index": 2,
+      "title_he": "כרטיס חיוב",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/02-debit-card.webp",
+      "facts_he": [
+        "כרטיס חיוב מוריד כסף מהחשבון",
+        "בודקים שיש מספיק יתרה",
+        "שומרים את הקוד הסודי לעצמנו"
+      ],
+      "tags_he": [
+        "כרטיס",
+        "יתרה"
+      ],
+      "decision_tip_he": "כרטיס הוא לא קסם, הוא מחובר לכסף אמיתי.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי כרטיס חיוב?",
+          "options_he": [
+            "כרטיס חיוב מוריד כסף מהחשבון",
+            "תמיד מתעלמים מכרטיס חיוב.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כרטיס חיוב מוריד כסף מהחשבון"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לכרטיס חיוב?",
+          "options_he": [
+            "כרטיס הוא לא קסם, הוא מחובר לכסף אמיתי.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כרטיס הוא לא קסם, הוא מחובר לכסף אמיתי."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על כרטיס חיוב?",
+          "options_he": [
+            "בודקים שיש מספיק יתרה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "שומרים את הקוד הסודי לעצמנו אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בודקים שיש מספיק יתרה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-03-credit-card",
+      "index": 3,
+      "title_he": "כרטיס אשראי",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/03-credit-card.webp",
+      "facts_he": [
+        "אשראי מאפשר לשלם עכשיו ולהחזיר אחר כך",
+        "צריך להבין מתי התשלום יורד",
+        "שימוש לא מתוכנן עלול להכביד"
+      ],
+      "tags_he": [
+        "אשראי",
+        "אחריות"
+      ],
+      "decision_tip_he": "לא קונים באשראי בלי לדעת מאיפה ההחזר יגיע.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי כרטיס אשראי?",
+          "options_he": [
+            "אשראי מאפשר לשלם עכשיו ולהחזיר אחר כך",
+            "תמיד מתעלמים מכרטיס אשראי.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אשראי מאפשר לשלם עכשיו ולהחזיר אחר כך"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לכרטיס אשראי?",
+          "options_he": [
+            "לא קונים באשראי בלי לדעת מאיפה ההחזר יגיע.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לא קונים באשראי בלי לדעת מאיפה ההחזר יגיע."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על כרטיס אשראי?",
+          "options_he": [
+            "צריך להבין מתי התשלום יורד, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "שימוש לא מתוכנן עלול להכביד אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "צריך להבין מתי התשלום יורד"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-04-bank-transfer",
+      "index": 4,
+      "title_he": "העברה בנקאית",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/04-bank-transfer.webp",
+      "facts_he": [
+        "העברה מעבירה כסף מחשבון לחשבון",
+        "בודקים שם וסכום לפני אישור",
+        "טעות בפרטים יכולה ליצור בעיה"
+      ],
+      "tags_he": [
+        "העברה",
+        "בדיקה"
+      ],
+      "decision_tip_he": "לפני אישור עושים עצירת בדיקה של שם, סכום וסיבה.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי העברה בנקאית?",
+          "options_he": [
+            "העברה מעבירה כסף מחשבון לחשבון",
+            "תמיד מתעלמים מהעברה בנקאית.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "העברה מעבירה כסף מחשבון לחשבון"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להעברה בנקאית?",
+          "options_he": [
+            "לפני אישור עושים עצירת בדיקה של שם, סכום וסיבה.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לפני אישור עושים עצירת בדיקה של שם, סכום וסיבה."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על העברה בנקאית?",
+          "options_he": [
+            "בודקים שם וסכום לפני אישור, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "טעות בפרטים יכולה ליצור בעיה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בודקים שם וסכום לפני אישור"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-05-payment-app",
+      "index": 5,
+      "title_he": "אפליקציית תשלום",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/05-payment-app.webp",
+      "facts_he": [
+        "אפליקציית תשלום שולחת כסף במהירות",
+        "מאשרים רק לאדם שמכירים",
+        "בודקים הודעה לפני שליחה"
+      ],
+      "tags_he": [
+        "דיגיטל",
+        "מהירות"
+      ],
+      "decision_tip_he": "מהיר זה נחמד, אבל בדיקה לפני שליחה חשובה יותר.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי אפליקציית תשלום?",
+          "options_he": [
+            "אפליקציית תשלום שולחת כסף במהירות",
+            "תמיד מתעלמים מאפליקציית תשלום.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אפליקציית תשלום שולחת כסף במהירות"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לאפליקציית תשלום?",
+          "options_he": [
+            "מהיר זה נחמד, אבל בדיקה לפני שליחה חשובה יותר.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מהיר זה נחמד, אבל בדיקה לפני שליחה חשובה יותר."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על אפליקציית תשלום?",
+          "options_he": [
+            "מאשרים רק לאדם שמכירים, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים הודעה לפני שליחה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מאשרים רק לאדם שמכירים"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-06-receipt",
+      "index": 6,
+      "title_he": "קבלה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/06-receipt.webp",
+      "facts_he": [
+        "קבלה מוכיחה ששילמנו",
+        "שומרים קבלה כשאולי נרצה להחליף",
+        "קבלה עוזרת לעקוב אחרי הוצאות"
+      ],
+      "tags_he": [
+        "הוכחה",
+        "מעקב"
+      ],
+      "decision_tip_he": "קבלה היא רמז חשוב במסע הכסף.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי קבלה?",
+          "options_he": [
+            "קבלה מוכיחה ששילמנו",
+            "תמיד מתעלמים מקבלה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "קבלה מוכיחה ששילמנו"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לקבלה?",
+          "options_he": [
+            "קבלה היא רמז חשוב במסע הכסף.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "קבלה היא רמז חשוב במסע הכסף."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על קבלה?",
+          "options_he": [
+            "שומרים קבלה כשאולי נרצה להחליף, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "קבלה עוזרת לעקוב אחרי הוצאות אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "שומרים קבלה כשאולי נרצה להחליף"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-07-standing-order",
+      "index": 7,
+      "title_he": "הוראת קבע",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/07-standing-order.webp",
+      "facts_he": [
+        "הוראת קבע משלמת סכום חוזר בזמן קבוע",
+        "היא נוחה לתשלומים קבועים",
+        "צריך לבדוק שהיא עדיין נחוצה"
+      ],
+      "tags_he": [
+        "קבוע",
+        "מעקב"
+      ],
+      "decision_tip_he": "תשלום שחוזר בלי בדיקה יכול להמשיך גם כשלא צריך.",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי הוראת קבע?",
+          "options_he": [
+            "הוראת קבע משלמת סכום חוזר בזמן קבוע",
+            "תמיד מתעלמים מהוראת קבע.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הוראת קבע משלמת סכום חוזר בזמן קבוע"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להוראת קבע?",
+          "options_he": [
+            "תשלום שחוזר בלי בדיקה יכול להמשיך גם כשלא צריך.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "תשלום שחוזר בלי בדיקה יכול להמשיך גם כשלא צריך."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על הוראת קבע?",
+          "options_he": [
+            "היא נוחה לתשלומים קבועים, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "צריך לבדוק שהיא עדיין נחוצה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "היא נוחה לתשלומים קבועים"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-08-installments",
+      "index": 8,
+      "title_he": "תשלומים",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/08-installments.webp",
+      "facts_he": [
+        "תשלומים מחלקים קנייה לכמה חודשים",
+        "המחיר הכולל עדיין חשוב",
+        "יותר מדי תשלומים מקשים לעקוב"
+      ],
+      "tags_he": [
+        "חלוקה",
+        "חודשים"
+      ],
+      "decision_tip_he": "שואלים: האם גם בחודש הבא זה יתאים לתקציב?",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי תשלומים?",
+          "options_he": [
+            "תשלומים מחלקים קנייה לכמה חודשים",
+            "תמיד מתעלמים מתשלומים.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "תשלומים מחלקים קנייה לכמה חודשים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לתשלומים?",
+          "options_he": [
+            "שואלים: האם גם בחודש הבא זה יתאים לתקציב?",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "שואלים: האם גם בחודש הבא זה יתאים לתקציב?"
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על תשלומים?",
+          "options_he": [
+            "המחיר הכולל עדיין חשוב, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "יותר מדי תשלומים מקשים לעקוב אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "המחיר הכולל עדיין חשוב"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-09-fee",
+      "index": 9,
+      "title_he": "עמלה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/09-fee.webp",
+      "facts_he": [
+        "עמלה היא תשלום על שירות",
+        "עמלות קטנות יכולות להצטבר",
+        "בודקים אם יש דרך זולה יותר"
+      ],
+      "tags_he": [
+        "עמלה",
+        "השוואה"
+      ],
+      "decision_tip_he": "גם מטבע קטן שיוצא הרבה פעמים הוא סכום גדול.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי עמלה?",
+          "options_he": [
+            "עמלה היא תשלום על שירות",
+            "תמיד מתעלמים מעמלה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "עמלה היא תשלום על שירות"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לעמלה?",
+          "options_he": [
+            "גם מטבע קטן שיוצא הרבה פעמים הוא סכום גדול.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "גם מטבע קטן שיוצא הרבה פעמים הוא סכום גדול."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על עמלה?",
+          "options_he": [
+            "עמלות קטנות יכולות להצטבר, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים אם יש דרך זולה יותר אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "עמלות קטנות יכולות להצטבר"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-payments-cards-10-credit-limit",
+      "index": 10,
+      "title_he": "מסגרת",
+      "asset_path": "assets/season-1/cards-poalim/poalim-payments-cards/10-credit-limit.webp",
+      "facts_he": [
+        "מסגרת קובעת גבול לשימוש באשראי",
+        "גבול לא אומר שחייבים להשתמש בכולו",
+        "שומרים מרחק מהגבול כדי לא להילחץ"
+      ],
+      "tags_he": [
+        "גבול",
+        "אחריות"
+      ],
+      "decision_tip_he": "מסגרת היא גדר בטיחות, לא יעד להגיע אליו.",
+      "rarity": "legendary",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי מסגרת?",
+          "options_he": [
+            "מסגרת קובעת גבול לשימוש באשראי",
+            "תמיד מתעלמים ממסגרת.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מסגרת קובעת גבול לשימוש באשראי"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה למסגרת?",
+          "options_he": [
+            "מסגרת היא גדר בטיחות, לא יעד להגיע אליו.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מסגרת היא גדר בטיחות, לא יעד להגיע אליו."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על מסגרת?",
+          "options_he": [
+            "גבול לא אומר שחייבים להשתמש בכולו, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "שומרים מרחק מהגבול כדי לא להילחץ אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "גבול לא אומר שחייבים להשתמש בכולו"
+        }
+      }
+    }
+  ]
+}

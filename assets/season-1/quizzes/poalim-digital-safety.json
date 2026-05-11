@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "product_name_he": "אוספים עובדות",
+  "language": "he",
+  "text_direction": "rtl",
+  "season": 1,
+  "pack_id": "poalim-digital-safety",
+  "pack_title_he": "בנק הפועלים: כסף דיגיטלי בטוח",
+  "domain_he": "בטיחות פיננסית, פרטיות והונאות",
+  "age_group_he": "ילדים 7-12",
+  "pack_asset_path": "assets/season-1/packs-poalim/pack-poalim-digital-safety.webp",
+  "card_count": 10,
+  "quiz_flow_he": "תמונת הקלף מציגה מושג, עובדות וטיפ החלטה. הבוחן מלמד ילדים לבדוק, להשוות ולשאול לפני פעולה כספית.",
+  "financial_note_he": "תוכן חינוכי בלבד. אין כאן ייעוץ פיננסי, תנאי מוצר, ריבית עדכנית או המלצה לבצע פעולה בבנק.",
+  "cards": [
+    {
+      "card_id": "poalim-digital-safety-01-strong-password",
+      "index": 1,
+      "title_he": "סיסמה חזקה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/01-strong-password.webp",
+      "facts_he": [
+        "סיסמה חזקה קשה לניחוש",
+        "לא משתמשים בשם או תאריך קל",
+        "לא משתפים סיסמה עם חברים"
+      ],
+      "tags_he": [
+        "סיסמה",
+        "פרטיות"
+      ],
+      "decision_tip_he": "סיסמה היא מפתח, ושומרים מפתח בכיס בטוח.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי סיסמה חזקה?",
+          "options_he": [
+            "סיסמה חזקה קשה לניחוש",
+            "תמיד מתעלמים מסיסמה חזקה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "סיסמה חזקה קשה לניחוש"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לסיסמה חזקה?",
+          "options_he": [
+            "סיסמה היא מפתח, ושומרים מפתח בכיס בטוח.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "סיסמה היא מפתח, ושומרים מפתח בכיס בטוח."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על סיסמה חזקה?",
+          "options_he": [
+            "לא משתמשים בשם או תאריך קל, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "לא משתפים סיסמה עם חברים אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לא משתמשים בשם או תאריך קל"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-02-two-step",
+      "index": 2,
+      "title_he": "אימות נוסף",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/02-two-step.webp",
+      "facts_he": [
+        "אימות נוסף מוסיף בדיקה לפני כניסה",
+        "קוד חד פעמי עוזר להגן על החשבון",
+        "לא מוסרים קוד שקיבלנו בהודעה"
+      ],
+      "tags_he": [
+        "קוד",
+        "הגנה"
+      ],
+      "decision_tip_he": "קוד שמגיע אליך נשאר אצלך.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי אימות נוסף?",
+          "options_he": [
+            "אימות נוסף מוסיף בדיקה לפני כניסה",
+            "תמיד מתעלמים מאימות נוסף.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אימות נוסף מוסיף בדיקה לפני כניסה"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לאימות נוסף?",
+          "options_he": [
+            "קוד שמגיע אליך נשאר אצלך.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "קוד שמגיע אליך נשאר אצלך."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על אימות נוסף?",
+          "options_he": [
+            "קוד חד פעמי עוזר להגן על החשבון, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "לא מוסרים קוד שקיבלנו בהודעה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "קוד חד פעמי עוזר להגן על החשבון"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-03-phishing",
+      "index": 3,
+      "title_he": "הודעה מתחזה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/03-phishing.webp",
+      "facts_he": [
+        "הודעה מתחזה מנסה לגנוב פרטים",
+        "בודקים שולח וקישור לפני לחיצה",
+        "כשיש ספק שואלים מבוגר"
+      ],
+      "tags_he": [
+        "זהירות",
+        "הונאה"
+      ],
+      "decision_tip_he": "קישור מלחיץ הוא סימן לעצור ולבדוק.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי הודעה מתחזה?",
+          "options_he": [
+            "הודעה מתחזה מנסה לגנוב פרטים",
+            "תמיד מתעלמים מהודעה מתחזה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הודעה מתחזה מנסה לגנוב פרטים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להודעה מתחזה?",
+          "options_he": [
+            "קישור מלחיץ הוא סימן לעצור ולבדוק.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "קישור מלחיץ הוא סימן לעצור ולבדוק."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על הודעה מתחזה?",
+          "options_he": [
+            "בודקים שולח וקישור לפני לחיצה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "כשיש ספק שואלים מבוגר אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בודקים שולח וקישור לפני לחיצה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-04-privacy",
+      "index": 4,
+      "title_he": "פרטיות",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/04-privacy.webp",
+      "facts_he": [
+        "פרטים אישיים שומרים בזהירות",
+        "לא מפרסמים מספר חשבון או קוד",
+        "משתפים מידע רק כשמבינים למה"
+      ],
+      "tags_he": [
+        "מידע",
+        "אחריות"
+      ],
+      "decision_tip_he": "מידע אישי הוא חלק מהאוצר שלך.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי פרטיות?",
+          "options_he": [
+            "פרטים אישיים שומרים בזהירות",
+            "תמיד מתעלמים מפרטיות.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "פרטים אישיים שומרים בזהירות"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לפרטיות?",
+          "options_he": [
+            "מידע אישי הוא חלק מהאוצר שלך.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מידע אישי הוא חלק מהאוצר שלך."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על פרטיות?",
+          "options_he": [
+            "לא מפרסמים מספר חשבון או קוד, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "משתפים מידע רק כשמבינים למה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לא מפרסמים מספר חשבון או קוד"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-05-pin-code",
+      "index": 5,
+      "title_he": "קוד סודי",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/05-pin-code.webp",
+      "facts_he": [
+        "קוד סודי מאשר פעולה בכרטיס",
+        "מסתירים את היד כשמקישים קוד",
+        "לא כותבים קוד ליד הכרטיס"
+      ],
+      "tags_he": [
+        "כרטיס",
+        "קוד"
+      ],
+      "decision_tip_he": "הקוד והכרטיס לא גרים באותו מקום.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי קוד סודי?",
+          "options_he": [
+            "קוד סודי מאשר פעולה בכרטיס",
+            "תמיד מתעלמים מקוד סודי.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "קוד סודי מאשר פעולה בכרטיס"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לקוד סודי?",
+          "options_he": [
+            "הקוד והכרטיס לא גרים באותו מקום.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הקוד והכרטיס לא גרים באותו מקום."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על קוד סודי?",
+          "options_he": [
+            "מסתירים את היד כשמקישים קוד, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "לא כותבים קוד ליד הכרטיס אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מסתירים את היד כשמקישים קוד"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-06-card-lock",
+      "index": 6,
+      "title_he": "נעילת כרטיס",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/06-card-lock.webp",
+      "facts_he": [
+        "אם כרטיס אבד אפשר לבקש חסימה",
+        "חסימה עוזרת למנוע שימוש לא מורשה",
+        "מדווחים מהר למבוגר או לבנק"
+      ],
+      "tags_he": [
+        "אובדן",
+        "פעולה"
+      ],
+      "decision_tip_he": "כשמשהו נעלם, פועלים מהר ובשקט.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי נעילת כרטיס?",
+          "options_he": [
+            "אם כרטיס אבד אפשר לבקש חסימה",
+            "תמיד מתעלמים מנעילת כרטיס.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אם כרטיס אבד אפשר לבקש חסימה"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לנעילת כרטיס?",
+          "options_he": [
+            "כשמשהו נעלם, פועלים מהר ובשקט.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כשמשהו נעלם, פועלים מהר ובשקט."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על נעילת כרטיס?",
+          "options_he": [
+            "חסימה עוזרת למנוע שימוש לא מורשה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מדווחים מהר למבוגר או לבנק אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "חסימה עוזרת למנוע שימוש לא מורשה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-07-safe-site",
+      "index": 7,
+      "title_he": "אתר מאובטח",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/07-safe-site.webp",
+      "facts_he": [
+        "בודקים כתובת אתר לפני שמקלידים פרטים",
+        "אתר אמיתי לא מבקש הכל בהודעה מפתיעה",
+        "נכנסים דרך כתובת מוכרת"
+      ],
+      "tags_he": [
+        "אתר",
+        "בדיקה"
+      ],
+      "decision_tip_he": "לא נכנסים לבנק דרך קישור חשוד.",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי אתר מאובטח?",
+          "options_he": [
+            "בודקים כתובת אתר לפני שמקלידים פרטים",
+            "תמיד מתעלמים מאתר מאובטח.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בודקים כתובת אתר לפני שמקלידים פרטים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לאתר מאובטח?",
+          "options_he": [
+            "לא נכנסים לבנק דרך קישור חשוד.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לא נכנסים לבנק דרך קישור חשוד."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על אתר מאובטח?",
+          "options_he": [
+            "אתר אמיתי לא מבקש הכל בהודעה מפתיעה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "נכנסים דרך כתובת מוכרת אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אתר אמיתי לא מבקש הכל בהודעה מפתיעה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-08-purchase-check",
+      "index": 8,
+      "title_he": "קנייה בטוחה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/08-purchase-check.webp",
+      "facts_he": [
+        "בודקים מוכר, מחיר ותנאי החזרה",
+        "מחיר נמוך מדי יכול להיות סימן אזהרה",
+        "שומרים אישור תשלום"
+      ],
+      "tags_he": [
+        "קנייה",
+        "אחריות"
+      ],
+      "decision_tip_he": "עסקה טובה עדיין צריכה להיות בטוחה.",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי קנייה בטוחה?",
+          "options_he": [
+            "בודקים מוכר, מחיר ותנאי החזרה",
+            "תמיד מתעלמים מקנייה בטוחה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בודקים מוכר, מחיר ותנאי החזרה"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לקנייה בטוחה?",
+          "options_he": [
+            "עסקה טובה עדיין צריכה להיות בטוחה.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "עסקה טובה עדיין צריכה להיות בטוחה."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על קנייה בטוחה?",
+          "options_he": [
+            "מחיר נמוך מדי יכול להיות סימן אזהרה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "שומרים אישור תשלום אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מחיר נמוך מדי יכול להיות סימן אזהרה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-09-alert-message",
+      "index": 9,
+      "title_he": "התראת פעולה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/09-alert-message.webp",
+      "facts_he": [
+        "התראה מספרת שקרה משהו בחשבון",
+        "קוראים התראה גם אם עסוקים",
+        "פעולה לא מוכרת דורשת בדיקה"
+      ],
+      "tags_he": [
+        "התראה",
+        "מעקב"
+      ],
+      "decision_tip_he": "התראה היא פעמון קטן שמגן על הכסף.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי התראת פעולה?",
+          "options_he": [
+            "התראה מספרת שקרה משהו בחשבון",
+            "תמיד מתעלמים מהתראת פעולה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "התראה מספרת שקרה משהו בחשבון"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להתראת פעולה?",
+          "options_he": [
+            "התראה היא פעמון קטן שמגן על הכסף.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "התראה היא פעמון קטן שמגן על הכסף."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על התראת פעולה?",
+          "options_he": [
+            "קוראים התראה גם אם עסוקים, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "פעולה לא מוכרת דורשת בדיקה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "קוראים התראה גם אם עסוקים"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-digital-safety-10-ask-grownup",
+      "index": 10,
+      "title_he": "שואלים מבוגר",
+      "asset_path": "assets/season-1/cards-poalim/poalim-digital-safety/10-ask-grownup.webp",
+      "facts_he": [
+        "כסף דיגיטלי דורש אחריות",
+        "שאלה בזמן יכולה למנוע טעות",
+        "מבוגר עוזר לבדוק לפני פעולה חשובה"
+      ],
+      "tags_he": [
+        "עזרה",
+        "החלטה"
+      ],
+      "decision_tip_he": "גיבור פיננסי יודע מתי לבקש עזרה.",
+      "rarity": "legendary",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי שואלים מבוגר?",
+          "options_he": [
+            "כסף דיגיטלי דורש אחריות",
+            "תמיד מתעלמים משואלים מבוגר.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כסף דיגיטלי דורש אחריות"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לשואלים מבוגר?",
+          "options_he": [
+            "גיבור פיננסי יודע מתי לבקש עזרה.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "גיבור פיננסי יודע מתי לבקש עזרה."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על שואלים מבוגר?",
+          "options_he": [
+            "שאלה בזמן יכולה למנוע טעות, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מבוגר עוזר לבדוק לפני פעולה חשובה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "שאלה בזמן יכולה למנוע טעות"
+        }
+      }
+    }
+  ]
+}

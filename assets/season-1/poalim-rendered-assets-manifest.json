@@ -1,0 +1,282 @@
+{
+  "schema_version": 1,
+  "packs": [
+    {
+      "pack_id": "poalim-bank-basics",
+      "png": "assets/season-1/packs-poalim/pack-poalim-bank-basics.png",
+      "webp": "assets/season-1/packs-poalim/pack-poalim-bank-basics.webp"
+    },
+    {
+      "pack_id": "poalim-saving-choices",
+      "png": "assets/season-1/packs-poalim/pack-poalim-saving-choices.png",
+      "webp": "assets/season-1/packs-poalim/pack-poalim-saving-choices.webp"
+    },
+    {
+      "pack_id": "poalim-payments-cards",
+      "png": "assets/season-1/packs-poalim/pack-poalim-payments-cards.png",
+      "webp": "assets/season-1/packs-poalim/pack-poalim-payments-cards.webp"
+    },
+    {
+      "pack_id": "poalim-loans-mortgage",
+      "png": "assets/season-1/packs-poalim/pack-poalim-loans-mortgage.png",
+      "webp": "assets/season-1/packs-poalim/pack-poalim-loans-mortgage.webp"
+    },
+    {
+      "pack_id": "poalim-digital-safety",
+      "png": "assets/season-1/packs-poalim/pack-poalim-digital-safety.png",
+      "webp": "assets/season-1/packs-poalim/pack-poalim-digital-safety.webp"
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "poalim-bank-basics-01-bank-account",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/01-bank-account.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/01-bank-account.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-02-balance",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/02-balance.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/02-balance.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-03-deposit",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/03-deposit.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/03-deposit.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-04-withdrawal",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/04-withdrawal.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/04-withdrawal.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-05-transaction",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/05-transaction.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/05-transaction.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-06-bank-branch",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/06-bank-branch.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/06-bank-branch.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-07-banker",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/07-banker.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/07-banker.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-08-account-statement",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/08-account-statement.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/08-account-statement.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-09-bank-app",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/09-bank-app.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/09-bank-app.webp"
+    },
+    {
+      "card_id": "poalim-bank-basics-10-financial-goal",
+      "png": "assets/season-1/cards-poalim/poalim-bank-basics/10-financial-goal.png",
+      "webp": "assets/season-1/cards-poalim/poalim-bank-basics/10-financial-goal.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-01-budget",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/01-budget.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/01-budget.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-02-needs-wants",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/02-needs-wants.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/02-needs-wants.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-03-saving",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/03-saving.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/03-saving.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-04-interest",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/04-interest.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/04-interest.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-05-deposit-plan",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/05-deposit-plan.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/05-deposit-plan.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-06-automatic-saving",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/06-automatic-saving.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/06-automatic-saving.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-07-emergency-cushion",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/07-emergency-cushion.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/07-emergency-cushion.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-08-price-check",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/08-price-check.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/08-price-check.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-09-opportunity-cost",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/09-opportunity-cost.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/09-opportunity-cost.webp"
+    },
+    {
+      "card_id": "poalim-saving-choices-10-smart-delay",
+      "png": "assets/season-1/cards-poalim/poalim-saving-choices/10-smart-delay.png",
+      "webp": "assets/season-1/cards-poalim/poalim-saving-choices/10-smart-delay.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-01-cash",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/01-cash.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/01-cash.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-02-debit-card",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/02-debit-card.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/02-debit-card.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-03-credit-card",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/03-credit-card.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/03-credit-card.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-04-bank-transfer",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/04-bank-transfer.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/04-bank-transfer.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-05-payment-app",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/05-payment-app.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/05-payment-app.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-06-receipt",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/06-receipt.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/06-receipt.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-07-standing-order",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/07-standing-order.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/07-standing-order.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-08-installments",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/08-installments.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/08-installments.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-09-fee",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/09-fee.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/09-fee.webp"
+    },
+    {
+      "card_id": "poalim-payments-cards-10-credit-limit",
+      "png": "assets/season-1/cards-poalim/poalim-payments-cards/10-credit-limit.png",
+      "webp": "assets/season-1/cards-poalim/poalim-payments-cards/10-credit-limit.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-01-loan",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/01-loan.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/01-loan.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-02-monthly-payment",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/02-monthly-payment.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/02-monthly-payment.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-03-fixed-rate",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/03-fixed-rate.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/03-fixed-rate.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-04-variable-rate",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/04-variable-rate.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/04-variable-rate.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-05-mortgage",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/05-mortgage.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/05-mortgage.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-06-pre-approval",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/06-pre-approval.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/06-pre-approval.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-07-mortgage-mix",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/07-mortgage-mix.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/07-mortgage-mix.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-08-index-linkage",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/08-index-linkage.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/08-index-linkage.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-09-refinance",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/09-refinance.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/09-refinance.webp"
+    },
+    {
+      "card_id": "poalim-loans-mortgage-10-appraisal",
+      "png": "assets/season-1/cards-poalim/poalim-loans-mortgage/10-appraisal.png",
+      "webp": "assets/season-1/cards-poalim/poalim-loans-mortgage/10-appraisal.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-01-strong-password",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/01-strong-password.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/01-strong-password.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-02-two-step",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/02-two-step.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/02-two-step.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-03-phishing",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/03-phishing.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/03-phishing.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-04-privacy",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/04-privacy.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/04-privacy.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-05-pin-code",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/05-pin-code.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/05-pin-code.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-06-card-lock",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/06-card-lock.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/06-card-lock.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-07-safe-site",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/07-safe-site.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/07-safe-site.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-08-purchase-check",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/08-purchase-check.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/08-purchase-check.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-09-alert-message",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/09-alert-message.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/09-alert-message.webp"
+    },
+    {
+      "card_id": "poalim-digital-safety-10-ask-grownup",
+      "png": "assets/season-1/cards-poalim/poalim-digital-safety/10-ask-grownup.png",
+      "webp": "assets/season-1/cards-poalim/poalim-digital-safety/10-ask-grownup.webp"
+    }
+  ]
+}

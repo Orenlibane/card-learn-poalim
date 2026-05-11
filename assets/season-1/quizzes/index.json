@@ -1,0 +1,44 @@
+{
+  "schema_version": 1,
+  "product_name_he": "אוספים עובדות",
+  "language": "he",
+  "text_direction": "rtl",
+  "season": 1,
+  "packs": [
+    {
+      "pack_id": "poalim-bank-basics",
+      "pack_title_he": "בנק הפועלים: כסף בבנק",
+      "domain_he": "מונחי יסוד בבנקאות לילדים",
+      "card_count": 10,
+      "quiz_path": "assets/season-1/quizzes/poalim-bank-basics.json"
+    },
+    {
+      "pack_id": "poalim-saving-choices",
+      "pack_title_he": "בנק הפועלים: חיסכון ובחירות",
+      "domain_he": "תקציב, חיסכון וקבלת החלטות",
+      "card_count": 10,
+      "quiz_path": "assets/season-1/quizzes/poalim-saving-choices.json"
+    },
+    {
+      "pack_id": "poalim-payments-cards",
+      "pack_title_he": "בנק הפועלים: תשלומים וכרטיסים",
+      "domain_he": "דרכי תשלום, כרטיסים ועמלות",
+      "card_count": 10,
+      "quiz_path": "assets/season-1/quizzes/poalim-payments-cards.json"
+    },
+    {
+      "pack_id": "poalim-loans-mortgage",
+      "pack_title_he": "בנק הפועלים: הלוואות ומשכנתא",
+      "domain_he": "הלוואות, החזרים ומשכנתא בשפה פשוטה",
+      "card_count": 10,
+      "quiz_path": "assets/season-1/quizzes/poalim-loans-mortgage.json"
+    },
+    {
+      "pack_id": "poalim-digital-safety",
+      "pack_title_he": "בנק הפועלים: כסף דיגיטלי בטוח",
+      "domain_he": "בטיחות פיננסית, פרטיות והונאות",
+      "card_count": 10,
+      "quiz_path": "assets/season-1/quizzes/poalim-digital-safety.json"
+    }
+  ]
+}

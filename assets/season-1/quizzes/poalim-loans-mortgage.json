@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "product_name_he": "אוספים עובדות",
+  "language": "he",
+  "text_direction": "rtl",
+  "season": 1,
+  "pack_id": "poalim-loans-mortgage",
+  "pack_title_he": "בנק הפועלים: הלוואות ומשכנתא",
+  "domain_he": "הלוואות, החזרים ומשכנתא בשפה פשוטה",
+  "age_group_he": "ילדים 9-12",
+  "pack_asset_path": "assets/season-1/packs-poalim/pack-poalim-loans-mortgage.webp",
+  "card_count": 10,
+  "quiz_flow_he": "תמונת הקלף מציגה מושג, עובדות וטיפ החלטה. הבוחן מלמד ילדים לבדוק, להשוות ולשאול לפני פעולה כספית.",
+  "financial_note_he": "תוכן חינוכי בלבד. אין כאן ייעוץ פיננסי, תנאי מוצר, ריבית עדכנית או המלצה לבצע פעולה בבנק.",
+  "cards": [
+    {
+      "card_id": "poalim-loans-mortgage-01-loan",
+      "index": 1,
+      "title_he": "הלוואה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/01-loan.webp",
+      "facts_he": [
+        "הלוואה היא כסף שמקבלים ומחזירים",
+        "מחזירים בדרך כלל יותר מהסכום שקיבלו",
+        "בודקים אם באמת צריך הלוואה"
+      ],
+      "tags_he": [
+        "הלוואה",
+        "החזר"
+      ],
+      "decision_tip_he": "הלוואה היא כלי, לא קיצור דרך לקניות.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי הלוואה?",
+          "options_he": [
+            "הלוואה היא כסף שמקבלים ומחזירים",
+            "תמיד מתעלמים מהלוואה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הלוואה היא כסף שמקבלים ומחזירים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להלוואה?",
+          "options_he": [
+            "הלוואה היא כלי, לא קיצור דרך לקניות.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הלוואה היא כלי, לא קיצור דרך לקניות."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על הלוואה?",
+          "options_he": [
+            "מחזירים בדרך כלל יותר מהסכום שקיבלו, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים אם באמת צריך הלוואה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מחזירים בדרך כלל יותר מהסכום שקיבלו"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-02-monthly-payment",
+      "index": 2,
+      "title_he": "החזר חודשי",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/02-monthly-payment.webp",
+      "facts_he": [
+        "החזר חודשי הוא סכום שמשלמים בכל חודש",
+        "הוא צריך להתאים להכנסות ולהוצאות",
+        "החזר גבוה מדי יוצר לחץ"
+      ],
+      "tags_he": [
+        "חודש",
+        "תכנון"
+      ],
+      "decision_tip_he": "החזר טוב משאיר מקום לאוכל, נסיעות וחיסכון.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי החזר חודשי?",
+          "options_he": [
+            "החזר חודשי הוא סכום שמשלמים בכל חודש",
+            "תמיד מתעלמים מהחזר חודשי.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "החזר חודשי הוא סכום שמשלמים בכל חודש"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להחזר חודשי?",
+          "options_he": [
+            "החזר טוב משאיר מקום לאוכל, נסיעות וחיסכון.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "החזר טוב משאיר מקום לאוכל, נסיעות וחיסכון."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על החזר חודשי?",
+          "options_he": [
+            "הוא צריך להתאים להכנסות ולהוצאות, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "החזר גבוה מדי יוצר לחץ אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הוא צריך להתאים להכנסות ולהוצאות"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-03-fixed-rate",
+      "index": 3,
+      "title_he": "ריבית קבועה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/03-fixed-rate.webp",
+      "facts_he": [
+        "ריבית קבועה לא משתנה לפי ההסכם",
+        "היא עוזרת לדעת מראש מה צפוי",
+        "בודקים מחיר מול יציבות"
+      ],
+      "tags_he": [
+        "יציבות",
+        "ריבית"
+      ],
+      "decision_tip_he": "לפעמים שקט וביטחון שווים בדיקה רצינית.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי ריבית קבועה?",
+          "options_he": [
+            "ריבית קבועה לא משתנה לפי ההסכם",
+            "תמיד מתעלמים מריבית קבועה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "ריבית קבועה לא משתנה לפי ההסכם"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לריבית קבועה?",
+          "options_he": [
+            "לפעמים שקט וביטחון שווים בדיקה רצינית.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לפעמים שקט וביטחון שווים בדיקה רצינית."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על ריבית קבועה?",
+          "options_he": [
+            "היא עוזרת לדעת מראש מה צפוי, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים מחיר מול יציבות אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "היא עוזרת לדעת מראש מה צפוי"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-04-variable-rate",
+      "index": 4,
+      "title_he": "ריבית משתנה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/04-variable-rate.webp",
+      "facts_he": [
+        "ריבית משתנה יכולה לעלות או לרדת",
+        "שינוי ריבית משנה החזר",
+        "צריך לחשוב גם על תרחיש פחות נוח"
+      ],
+      "tags_he": [
+        "שינוי",
+        "סיכון"
+      ],
+      "decision_tip_he": "בודקים אם נוכל לשלם גם אם ההחזר יעלה.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי ריבית משתנה?",
+          "options_he": [
+            "ריבית משתנה יכולה לעלות או לרדת",
+            "תמיד מתעלמים מריבית משתנה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "ריבית משתנה יכולה לעלות או לרדת"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לריבית משתנה?",
+          "options_he": [
+            "בודקים אם נוכל לשלם גם אם ההחזר יעלה.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בודקים אם נוכל לשלם גם אם ההחזר יעלה."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על ריבית משתנה?",
+          "options_he": [
+            "שינוי ריבית משנה החזר, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "צריך לחשוב גם על תרחיש פחות נוח אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "שינוי ריבית משנה החזר"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-05-mortgage",
+      "index": 5,
+      "title_he": "משכנתא",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/05-mortgage.webp",
+      "facts_he": [
+        "משכנתא היא הלוואה גדולה לרכישת דירה",
+        "ההחזר נמשך שנים רבות",
+        "בודקים יכולת החזר לפני שמתחייבים"
+      ],
+      "tags_he": [
+        "דירה",
+        "הלוואה"
+      ],
+      "decision_tip_he": "החלטה גדולה דורשת הרבה שאלות וסבלנות.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי משכנתא?",
+          "options_he": [
+            "משכנתא היא הלוואה גדולה לרכישת דירה",
+            "תמיד מתעלמים ממשכנתא.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "משכנתא היא הלוואה גדולה לרכישת דירה"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה למשכנתא?",
+          "options_he": [
+            "החלטה גדולה דורשת הרבה שאלות וסבלנות.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "החלטה גדולה דורשת הרבה שאלות וסבלנות."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על משכנתא?",
+          "options_he": [
+            "ההחזר נמשך שנים רבות, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים יכולת החזר לפני שמתחייבים אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "ההחזר נמשך שנים רבות"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-06-pre-approval",
+      "index": 6,
+      "title_he": "אישור עקרוני",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/06-pre-approval.webp",
+      "facts_he": [
+        "אישור עקרוני הוא בדיקה ראשונית",
+        "הוא מבוסס על פרטים שמוסרים לבנק",
+        "האישור אינו חוזה סופי"
+      ],
+      "tags_he": [
+        "בדיקה",
+        "תהליך"
+      ],
+      "decision_tip_he": "ראשוני אומר התחלה, לא סוף הדרך.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי אישור עקרוני?",
+          "options_he": [
+            "אישור עקרוני הוא בדיקה ראשונית",
+            "תמיד מתעלמים מאישור עקרוני.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אישור עקרוני הוא בדיקה ראשונית"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לאישור עקרוני?",
+          "options_he": [
+            "ראשוני אומר התחלה, לא סוף הדרך.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "ראשוני אומר התחלה, לא סוף הדרך."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על אישור עקרוני?",
+          "options_he": [
+            "הוא מבוסס על פרטים שמוסרים לבנק, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "האישור אינו חוזה סופי אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הוא מבוסס על פרטים שמוסרים לבנק"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-07-mortgage-mix",
+      "index": 7,
+      "title_he": "תמהיל מסלולים",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/07-mortgage-mix.webp",
+      "facts_he": [
+        "משכנתא יכולה לכלול כמה מסלולים",
+        "כל מסלול מתנהג אחרת",
+        "משווים סיכון, מחיר וגמישות"
+      ],
+      "tags_he": [
+        "מסלולים",
+        "השוואה"
+      ],
+      "decision_tip_he": "מערבבים מסלולים רק אחרי שמבינים כל חלק.",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי תמהיל מסלולים?",
+          "options_he": [
+            "משכנתא יכולה לכלול כמה מסלולים",
+            "תמיד מתעלמים מתמהיל מסלולים.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "משכנתא יכולה לכלול כמה מסלולים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לתמהיל מסלולים?",
+          "options_he": [
+            "מערבבים מסלולים רק אחרי שמבינים כל חלק.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מערבבים מסלולים רק אחרי שמבינים כל חלק."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על תמהיל מסלולים?",
+          "options_he": [
+            "כל מסלול מתנהג אחרת, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "משווים סיכון, מחיר וגמישות אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כל מסלול מתנהג אחרת"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-08-index-linkage",
+      "index": 8,
+      "title_he": "הצמדה למדד",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/08-index-linkage.webp",
+      "facts_he": [
+        "מדד מודד שינוי במחירים",
+        "הצמדה יכולה לשנות את החוב",
+        "בודקים איך המדד משפיע לאורך זמן"
+      ],
+      "tags_he": [
+        "מדד",
+        "מחירים"
+      ],
+      "decision_tip_he": "מחיר שנראה קטן היום יכול לזוז עם הזמן.",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי הצמדה למדד?",
+          "options_he": [
+            "מדד מודד שינוי במחירים",
+            "תמיד מתעלמים מהצמדה למדד.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מדד מודד שינוי במחירים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להצמדה למדד?",
+          "options_he": [
+            "מחיר שנראה קטן היום יכול לזוז עם הזמן.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מחיר שנראה קטן היום יכול לזוז עם הזמן."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על הצמדה למדד?",
+          "options_he": [
+            "הצמדה יכולה לשנות את החוב, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים איך המדד משפיע לאורך זמן אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הצמדה יכולה לשנות את החוב"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-09-refinance",
+      "index": 9,
+      "title_he": "מחזור הלוואה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/09-refinance.webp",
+      "facts_he": [
+        "מחזור בודק שינוי תנאים של הלוואה קיימת",
+        "לא תמיד מחזור משתלם",
+        "משווים עלויות לפני החלטה"
+      ],
+      "tags_he": [
+        "בדיקה",
+        "שינוי"
+      ],
+      "decision_tip_he": "שינוי תנאים הוא חידה שפותרים עם מספרים.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי מחזור הלוואה?",
+          "options_he": [
+            "מחזור בודק שינוי תנאים של הלוואה קיימת",
+            "תמיד מתעלמים ממחזור הלוואה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מחזור בודק שינוי תנאים של הלוואה קיימת"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה למחזור הלוואה?",
+          "options_he": [
+            "שינוי תנאים הוא חידה שפותרים עם מספרים.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "שינוי תנאים הוא חידה שפותרים עם מספרים."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על מחזור הלוואה?",
+          "options_he": [
+            "לא תמיד מחזור משתלם, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "משווים עלויות לפני החלטה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לא תמיד מחזור משתלם"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-loans-mortgage-10-appraisal",
+      "index": 10,
+      "title_he": "שמאות",
+      "asset_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/10-appraisal.webp",
+      "facts_he": [
+        "שמאות מעריכה שווי של נכס",
+        "הבנק משתמש בה כחלק מהבדיקה",
+        "שווי הנכס משפיע על החלטות הלוואה"
+      ],
+      "tags_he": [
+        "נכס",
+        "בדיקה"
+      ],
+      "decision_tip_he": "לפני סכום גדול בודקים גם את ערך הדבר שקונים.",
+      "rarity": "legendary",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי שמאות?",
+          "options_he": [
+            "שמאות מעריכה שווי של נכס",
+            "תמיד מתעלמים משמאות.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "שמאות מעריכה שווי של נכס"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לשמאות?",
+          "options_he": [
+            "לפני סכום גדול בודקים גם את ערך הדבר שקונים.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לפני סכום גדול בודקים גם את ערך הדבר שקונים."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על שמאות?",
+          "options_he": [
+            "הבנק משתמש בה כחלק מהבדיקה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "שווי הנכס משפיע על החלטות הלוואה אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הבנק משתמש בה כחלק מהבדיקה"
+        }
+      }
+    }
+  ]
+}

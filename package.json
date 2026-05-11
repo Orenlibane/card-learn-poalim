@@ -1,0 +1,15 @@
+{
+  "name": "card-game",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "generate:poalim": "node scripts/generate-poalim-finance-data.mjs && python3 scripts/render-poalim-premium-assets.py",
+    "render:poalim": "python3 scripts/render-poalim-premium-assets.py",
+    "build:data": "node scripts/build-mvp-data.mjs",
+    "start": "node server.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

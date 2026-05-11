@@ -1,0 +1,567 @@
+{
+  "schema_version": 1,
+  "product_name_he": "אוספים עובדות",
+  "language": "he",
+  "text_direction": "rtl",
+  "season": 1,
+  "pack_id": "poalim-bank-basics",
+  "pack_title_he": "בנק הפועלים: כסף בבנק",
+  "domain_he": "מונחי יסוד בבנקאות לילדים",
+  "age_group_he": "ילדים 6-12",
+  "pack_asset_path": "assets/season-1/packs-poalim/pack-poalim-bank-basics.webp",
+  "card_count": 10,
+  "quiz_flow_he": "תמונת הקלף מציגה מושג, עובדות וטיפ החלטה. הבוחן מלמד ילדים לבדוק, להשוות ולשאול לפני פעולה כספית.",
+  "financial_note_he": "תוכן חינוכי בלבד. אין כאן ייעוץ פיננסי, תנאי מוצר, ריבית עדכנית או המלצה לבצע פעולה בבנק.",
+  "cards": [
+    {
+      "card_id": "poalim-bank-basics-01-bank-account",
+      "index": 1,
+      "title_he": "חשבון בנק",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/01-bank-account.webp",
+      "facts_he": [
+        "מקום מסודר לשמור בו כסף",
+        "לחשבון יש בעלים וכללים",
+        "בודקים מה מותר לעשות בחשבון"
+      ],
+      "tags_he": [
+        "חשבון",
+        "בנק"
+      ],
+      "decision_tip_he": "לפני פעולה שואלים: למי החשבון ומה הכללים?",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי חשבון בנק?",
+          "options_he": [
+            "מקום מסודר לשמור בו כסף",
+            "תמיד מתעלמים מחשבון בנק.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מקום מסודר לשמור בו כסף"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לחשבון בנק?",
+          "options_he": [
+            "לפני פעולה שואלים: למי החשבון ומה הכללים?",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לפני פעולה שואלים: למי החשבון ומה הכללים?"
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על חשבון בנק?",
+          "options_he": [
+            "לחשבון יש בעלים וכללים, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים מה מותר לעשות בחשבון אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לחשבון יש בעלים וכללים"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-02-balance",
+      "index": 2,
+      "title_he": "יתרה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/02-balance.webp",
+      "facts_he": [
+        "היתרה מראה כמה כסף יש עכשיו",
+        "יתרה משתנה אחרי קנייה או הפקדה",
+        "בודקים יתרה לפני שמחליטים לקנות"
+      ],
+      "tags_he": [
+        "בדיקה",
+        "כסף"
+      ],
+      "decision_tip_he": "אם היתרה קטנה מהמחיר, מחכים או בוחרים משהו זול יותר.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי יתרה?",
+          "options_he": [
+            "היתרה מראה כמה כסף יש עכשיו",
+            "תמיד מתעלמים מיתרה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "היתרה מראה כמה כסף יש עכשיו"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה ליתרה?",
+          "options_he": [
+            "אם היתרה קטנה מהמחיר, מחכים או בוחרים משהו זול יותר.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אם היתרה קטנה מהמחיר, מחכים או בוחרים משהו זול יותר."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על יתרה?",
+          "options_he": [
+            "יתרה משתנה אחרי קנייה או הפקדה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים יתרה לפני שמחליטים לקנות אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "יתרה משתנה אחרי קנייה או הפקדה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-03-deposit",
+      "index": 3,
+      "title_he": "הפקדה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/03-deposit.webp",
+      "facts_he": [
+        "הפקדה מוסיפה כסף לחשבון",
+        "אפשר להפקיד כסף שקיבלנו או חסכנו",
+        "רושמים הפקדה כדי לזכור מאיפה הכסף"
+      ],
+      "tags_he": [
+        "חיסכון",
+        "תנועה"
+      ],
+      "decision_tip_he": "כסף שנכנס יכול ללכת קודם ליעד חיסכון קטן.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי הפקדה?",
+          "options_he": [
+            "הפקדה מוסיפה כסף לחשבון",
+            "תמיד מתעלמים מהפקדה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הפקדה מוסיפה כסף לחשבון"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה להפקדה?",
+          "options_he": [
+            "כסף שנכנס יכול ללכת קודם ליעד חיסכון קטן.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כסף שנכנס יכול ללכת קודם ליעד חיסכון קטן."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על הפקדה?",
+          "options_he": [
+            "אפשר להפקיד כסף שקיבלנו או חסכנו, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "רושמים הפקדה כדי לזכור מאיפה הכסף אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אפשר להפקיד כסף שקיבלנו או חסכנו"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-04-withdrawal",
+      "index": 4,
+      "title_he": "משיכה",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/04-withdrawal.webp",
+      "facts_he": [
+        "משיכה מוציאה כסף מהחשבון",
+        "משיכה מקטינה את היתרה",
+        "מושכים רק סכום שבאמת צריך"
+      ],
+      "tags_he": [
+        "מזומן",
+        "בחירה"
+      ],
+      "decision_tip_he": "לפני משיכה מחליטים למה הכסף מיועד.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי משיכה?",
+          "options_he": [
+            "משיכה מוציאה כסף מהחשבון",
+            "תמיד מתעלמים ממשיכה.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "משיכה מוציאה כסף מהחשבון"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה למשיכה?",
+          "options_he": [
+            "לפני משיכה מחליטים למה הכסף מיועד.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "לפני משיכה מחליטים למה הכסף מיועד."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על משיכה?",
+          "options_he": [
+            "משיכה מקטינה את היתרה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מושכים רק סכום שבאמת צריך אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "משיכה מקטינה את היתרה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-05-transaction",
+      "index": 5,
+      "title_he": "תנועה בחשבון",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/05-transaction.webp",
+      "facts_he": [
+        "כל כניסה או יציאה של כסף נקראת תנועה",
+        "תנועות עוזרות לעקוב אחרי כסף",
+        "בודקים תנועות כדי למצוא טעויות"
+      ],
+      "tags_he": [
+        "מעקב",
+        "סדר"
+      ],
+      "decision_tip_he": "מעקב קצר מונע הפתעות בסוף השבוע.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי תנועה בחשבון?",
+          "options_he": [
+            "כל כניסה או יציאה של כסף נקראת תנועה",
+            "תמיד מתעלמים מתנועה בחשבון.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כל כניסה או יציאה של כסף נקראת תנועה"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לתנועה בחשבון?",
+          "options_he": [
+            "מעקב קצר מונע הפתעות בסוף השבוע.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "מעקב קצר מונע הפתעות בסוף השבוע."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על תנועה בחשבון?",
+          "options_he": [
+            "תנועות עוזרות לעקוב אחרי כסף, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "בודקים תנועות כדי למצוא טעויות אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "תנועות עוזרות לעקוב אחרי כסף"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-06-bank-branch",
+      "index": 6,
+      "title_he": "סניף",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/06-bank-branch.webp",
+      "facts_he": [
+        "סניף הוא מקום שבו מקבלים שירות בנקאי",
+        "בסניף אפשר לשאול שאלות ולקבל הסבר",
+        "מבוגר אחראי מגיע עם ילד לפעולות חשובות"
+      ],
+      "tags_he": [
+        "שירות",
+        "עזרה"
+      ],
+      "decision_tip_he": "כשלא מבינים משהו, מבקשים הסבר פשוט.",
+      "rarity": "rare",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי סניף?",
+          "options_he": [
+            "סניף הוא מקום שבו מקבלים שירות בנקאי",
+            "תמיד מתעלמים מסניף.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "סניף הוא מקום שבו מקבלים שירות בנקאי"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לסניף?",
+          "options_he": [
+            "כשלא מבינים משהו, מבקשים הסבר פשוט.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כשלא מבינים משהו, מבקשים הסבר פשוט."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על סניף?",
+          "options_he": [
+            "בסניף אפשר לשאול שאלות ולקבל הסבר, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מבוגר אחראי מגיע עם ילד לפעולות חשובות אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בסניף אפשר לשאול שאלות ולקבל הסבר"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-07-banker",
+      "index": 7,
+      "title_he": "בנקאי",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/07-banker.webp",
+      "facts_he": [
+        "בנקאי עוזר להבין פעולות בנק",
+        "שאלה טובה עוזרת לקבל שירות מתאים",
+        "לא חותמים לפני שמבינים"
+      ],
+      "tags_he": [
+        "שיחה",
+        "אחריות"
+      ],
+      "decision_tip_he": "שאלה חכמה: מה יקרה לכסף שלי אחר כך?",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי בנקאי?",
+          "options_he": [
+            "בנקאי עוזר להבין פעולות בנק",
+            "תמיד מתעלמים מבנקאי.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בנקאי עוזר להבין פעולות בנק"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לבנקאי?",
+          "options_he": [
+            "שאלה חכמה: מה יקרה לכסף שלי אחר כך?",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "שאלה חכמה: מה יקרה לכסף שלי אחר כך?"
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על בנקאי?",
+          "options_he": [
+            "שאלה טובה עוזרת לקבל שירות מתאים, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "לא חותמים לפני שמבינים אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "שאלה טובה עוזרת לקבל שירות מתאים"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-08-account-statement",
+      "index": 8,
+      "title_he": "דף חשבון",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/08-account-statement.webp",
+      "facts_he": [
+        "דף חשבון מסכם תנועות בתקופה",
+        "הוא עוזר לראות לאן הכסף הלך",
+        "משווים בין דף החשבון לתכנון"
+      ],
+      "tags_he": [
+        "סיכום",
+        "הרגלים"
+      ],
+      "decision_tip_he": "בסוף חודש מחפשים הוצאה שאפשר לשפר.",
+      "rarity": "epic",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי דף חשבון?",
+          "options_he": [
+            "דף חשבון מסכם תנועות בתקופה",
+            "תמיד מתעלמים מדף חשבון.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "דף חשבון מסכם תנועות בתקופה"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לדף חשבון?",
+          "options_he": [
+            "בסוף חודש מחפשים הוצאה שאפשר לשפר.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בסוף חודש מחפשים הוצאה שאפשר לשפר."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על דף חשבון?",
+          "options_he": [
+            "הוא עוזר לראות לאן הכסף הלך, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "משווים בין דף החשבון לתכנון אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "הוא עוזר לראות לאן הכסף הלך"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-09-bank-app",
+      "index": 9,
+      "title_he": "אפליקציית הבנק",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/09-bank-app.webp",
+      "facts_he": [
+        "אפליקציה עוזרת לבדוק חשבון מהטלפון",
+        "נכנסים רק עם פרטים אישיים וסיסמה",
+        "לא נותנים לאחרים להשתמש בחשבון"
+      ],
+      "tags_he": [
+        "דיגיטל",
+        "זהירות"
+      ],
+      "decision_tip_he": "בודקים כסף רק במכשיר בטוח ועם מבוגר כשצריך.",
+      "rarity": "common",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי אפליקציית הבנק?",
+          "options_he": [
+            "אפליקציה עוזרת לבדוק חשבון מהטלפון",
+            "תמיד מתעלמים מאפליקציית הבנק.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "אפליקציה עוזרת לבדוק חשבון מהטלפון"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה לאפליקציית הבנק?",
+          "options_he": [
+            "בודקים כסף רק במכשיר בטוח ועם מבוגר כשצריך.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "בודקים כסף רק במכשיר בטוח ועם מבוגר כשצריך."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על אפליקציית הבנק?",
+          "options_he": [
+            "נכנסים רק עם פרטים אישיים וסיסמה, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "לא נותנים לאחרים להשתמש בחשבון אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "נכנסים רק עם פרטים אישיים וסיסמה"
+        }
+      }
+    },
+    {
+      "card_id": "poalim-bank-basics-10-financial-goal",
+      "index": 10,
+      "title_he": "יעד כספי",
+      "asset_path": "assets/season-1/cards-poalim/poalim-bank-basics/10-financial-goal.webp",
+      "facts_he": [
+        "יעד כספי אומר למה חוסכים",
+        "יעד ברור עוזר לא לבזבז מהר",
+        "מחלקים יעד גדול לצעדים קטנים"
+      ],
+      "tags_he": [
+        "מטרה",
+        "התמדה"
+      ],
+      "decision_tip_he": "כותבים יעד ומסמנים התקדמות כמו במשחק.",
+      "rarity": "legendary",
+      "quizzes": {
+        "junior": {
+          "age_band_he": "3-5",
+          "reward_brain_coins": 8,
+          "question_he": "מה נכון לגבי יעד כספי?",
+          "options_he": [
+            "יעד כספי אומר למה חוסכים",
+            "תמיד מתעלמים מיעד כספי.",
+            "אין קשר בין הקלף לבין כסף."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "יעד כספי אומר למה חוסכים"
+        },
+        "child": {
+          "age_band_he": "6-12",
+          "reward_brain_coins": 15,
+          "question_he": "איזו החלטה חכמה קשורה ליעד כספי?",
+          "options_he": [
+            "כותבים יעד ומסמנים התקדמות כמו במשחק.",
+            "לוחצים מהר בלי לבדוק.",
+            "בוחרים תמיד את הדבר הכי יקר."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "כותבים יעד ומסמנים התקדמות כמו במשחק."
+        },
+        "advanced": {
+          "age_band_he": "13+",
+          "reward_brain_coins": 25,
+          "question_he": "איזה הסבר הכי מדויק על יעד כספי?",
+          "options_he": [
+            "יעד ברור עוזר לא לבזבז מהר, ולכן כדאי להבין את התנאים.",
+            "זה מושג שלא קשור להחלטות כספיות.",
+            "מחלקים יעד גדול לצעדים קטנים אומר שאין צורך לבדוק כלום."
+          ],
+          "correct_answer_index": 0,
+          "source_fact_he": "יעד ברור עוזר לא לבזבז מהר"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,391 @@
+{
+  "schema_version": 1,
+  "product_name_he": "אוספים עובדות",
+  "language": "he",
+  "text_direction": "rtl",
+  "note_he": "הפרויקט משתמש בנכסי PNG/WebP מרונדרים. הפרומפטים כאן מיועדים לשדרוג עתידי ב-image generation אחד־אחד.",
+  "packs": [
+    {
+      "asset_id": "pack-poalim-bank-basics",
+      "output_path": "assets/season-1/packs-poalim/pack-poalim-bank-basics.webp",
+      "pack_id": "poalim-bank-basics",
+      "prompt_he": "צור עטיפת חבילת קלפים יחידה למשחק \"אוספים עובדות\" בעברית מלאה, שם \"בנק הפועלים: כסף בבנק\", 10 קלפי עובדות, playful לילדים, בנקאות וחינוך פיננסי, רקע שקוף, בלי אנגלית ובלי ייעוץ פיננסי."
+    },
+    {
+      "asset_id": "pack-poalim-saving-choices",
+      "output_path": "assets/season-1/packs-poalim/pack-poalim-saving-choices.webp",
+      "pack_id": "poalim-saving-choices",
+      "prompt_he": "צור עטיפת חבילת קלפים יחידה למשחק \"אוספים עובדות\" בעברית מלאה, שם \"בנק הפועלים: חיסכון ובחירות\", 10 קלפי עובדות, playful לילדים, בנקאות וחינוך פיננסי, רקע שקוף, בלי אנגלית ובלי ייעוץ פיננסי."
+    },
+    {
+      "asset_id": "pack-poalim-payments-cards",
+      "output_path": "assets/season-1/packs-poalim/pack-poalim-payments-cards.webp",
+      "pack_id": "poalim-payments-cards",
+      "prompt_he": "צור עטיפת חבילת קלפים יחידה למשחק \"אוספים עובדות\" בעברית מלאה, שם \"בנק הפועלים: תשלומים וכרטיסים\", 10 קלפי עובדות, playful לילדים, בנקאות וחינוך פיננסי, רקע שקוף, בלי אנגלית ובלי ייעוץ פיננסי."
+    },
+    {
+      "asset_id": "pack-poalim-loans-mortgage",
+      "output_path": "assets/season-1/packs-poalim/pack-poalim-loans-mortgage.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "prompt_he": "צור עטיפת חבילת קלפים יחידה למשחק \"אוספים עובדות\" בעברית מלאה, שם \"בנק הפועלים: הלוואות ומשכנתא\", 10 קלפי עובדות, playful לילדים, בנקאות וחינוך פיננסי, רקע שקוף, בלי אנגלית ובלי ייעוץ פיננסי."
+    },
+    {
+      "asset_id": "pack-poalim-digital-safety",
+      "output_path": "assets/season-1/packs-poalim/pack-poalim-digital-safety.webp",
+      "pack_id": "poalim-digital-safety",
+      "prompt_he": "צור עטיפת חבילת קלפים יחידה למשחק \"אוספים עובדות\" בעברית מלאה, שם \"בנק הפועלים: כסף דיגיטלי בטוח\", 10 קלפי עובדות, playful לילדים, בנקאות וחינוך פיננסי, רקע שקוף, בלי אנגלית ובלי ייעוץ פיננסי."
+    }
+  ],
+  "cards": [
+    {
+      "asset_id": "poalim-bank-basics-01-bank-account",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/01-bank-account.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "חשבון בנק",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"חשבון בנק\", שלוש עובדות: מקום מסודר לשמור בו כסף / לחשבון יש בעלים וכללים / בודקים מה מותר לעשות בחשבון. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-02-balance",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/02-balance.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "יתרה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"יתרה\", שלוש עובדות: היתרה מראה כמה כסף יש עכשיו / יתרה משתנה אחרי קנייה או הפקדה / בודקים יתרה לפני שמחליטים לקנות. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-03-deposit",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/03-deposit.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "הפקדה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"הפקדה\", שלוש עובדות: הפקדה מוסיפה כסף לחשבון / אפשר להפקיד כסף שקיבלנו או חסכנו / רושמים הפקדה כדי לזכור מאיפה הכסף. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-04-withdrawal",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/04-withdrawal.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "משיכה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"משיכה\", שלוש עובדות: משיכה מוציאה כסף מהחשבון / משיכה מקטינה את היתרה / מושכים רק סכום שבאמת צריך. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-05-transaction",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/05-transaction.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "תנועה בחשבון",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"תנועה בחשבון\", שלוש עובדות: כל כניסה או יציאה של כסף נקראת תנועה / תנועות עוזרות לעקוב אחרי כסף / בודקים תנועות כדי למצוא טעויות. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-06-bank-branch",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/06-bank-branch.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "סניף",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"סניף\", שלוש עובדות: סניף הוא מקום שבו מקבלים שירות בנקאי / בסניף אפשר לשאול שאלות ולקבל הסבר / מבוגר אחראי מגיע עם ילד לפעולות חשובות. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-07-banker",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/07-banker.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "בנקאי",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"בנקאי\", שלוש עובדות: בנקאי עוזר להבין פעולות בנק / שאלה טובה עוזרת לקבל שירות מתאים / לא חותמים לפני שמבינים. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-08-account-statement",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/08-account-statement.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "דף חשבון",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"דף חשבון\", שלוש עובדות: דף חשבון מסכם תנועות בתקופה / הוא עוזר לראות לאן הכסף הלך / משווים בין דף החשבון לתכנון. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-09-bank-app",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/09-bank-app.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "אפליקציית הבנק",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"אפליקציית הבנק\", שלוש עובדות: אפליקציה עוזרת לבדוק חשבון מהטלפון / נכנסים רק עם פרטים אישיים וסיסמה / לא נותנים לאחרים להשתמש בחשבון. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-bank-basics-10-financial-goal",
+      "output_path": "assets/season-1/cards-poalim/poalim-bank-basics/10-financial-goal.webp",
+      "pack_id": "poalim-bank-basics",
+      "title_he": "יעד כספי",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף בבנק\", כותרת \"יעד כספי\", שלוש עובדות: יעד כספי אומר למה חוסכים / יעד ברור עוזר לא לבזבז מהר / מחלקים יעד גדול לצעדים קטנים. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-01-budget",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/01-budget.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "תקציב",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"תקציב\", שלוש עובדות: תקציב הוא תוכנית לכסף / מחלקים כסף לקנייה, חיסכון ונתינה / תקציב עוזר לבחור בלי לחץ. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-02-needs-wants",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/02-needs-wants.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "צריך או רוצה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"צריך או רוצה\", שלוש עובדות: צורך הוא דבר חשוב באמת / רצון הוא דבר שכיף לקבל / מחליטים קודם על צרכים ואז על רצונות. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-03-saving",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/03-saving.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "חיסכון",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"חיסכון\", שלוש עובדות: חיסכון הוא כסף ששומרים למטרה / גם סכומים קטנים מצטברים / קל יותר לחסוך כשיש יעד. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-04-interest",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/04-interest.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "ריבית",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"ריבית\", שלוש עובדות: ריבית היא כסף שמתווסף או משולם על כסף / בחיסכון ריבית יכולה להגדיל סכום / בהלוואה ריבית מגדילה החזר. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-05-deposit-plan",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/05-deposit-plan.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "פיקדון",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"פיקדון\", שלוש עובדות: פיקדון שומר כסף לתקופה מוסכמת / לפעמים אי אפשר למשוך מיד / בודקים תנאים לפני שמפקידים. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-06-automatic-saving",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/06-automatic-saving.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "חיסכון אוטומטי",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"חיסכון אוטומטי\", שלוש עובדות: אפשר להעביר סכום קבוע לחיסכון / הרגל קבוע מקל על התמדה / מתחילים מסכום שמתאים לתקציב. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-07-emergency-cushion",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/07-emergency-cushion.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "כרית ביטחון",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"כרית ביטחון\", שלוש עובדות: כרית ביטחון היא כסף למצבים מפתיעים / היא עוזרת לא להיבהל מהוצאה פתאומית / שומרים אותה לפני קניות לא דחופות. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-08-price-check",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/08-price-check.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "השוואת מחירים",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"השוואת מחירים\", שלוש עובדות: בודקים מחיר לפני שקונים / אותו מוצר יכול לעלות אחרת במקומות שונים / השוואה משאירה יותר כסף לחיסכון. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-09-opportunity-cost",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/09-opportunity-cost.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "בחירה בין דברים",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"בחירה בין דברים\", שלוש עובדות: כשקונים דבר אחד מוותרים על דבר אחר / לכל בחירה יש מחיר וגם רווח / מחשבים מה הכי חשוב עכשיו. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-saving-choices-10-smart-delay",
+      "output_path": "assets/season-1/cards-poalim/poalim-saving-choices/10-smart-delay.webp",
+      "pack_id": "poalim-saving-choices",
+      "title_he": "לחכות רגע",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: חיסכון ובחירות\", כותרת \"לחכות רגע\", שלוש עובדות: המתנה קצרה עוזרת להחליט בשקט / לא כל מבצע מתאים לנו / מחשבה לפני קנייה חוסכת חרטה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-01-cash",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/01-cash.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "מזומן",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"מזומן\", שלוש עובדות: מזומן הוא כסף פיזי ביד / קל לראות כמה נשאר בארנק / מזומן שאבד קשה להחזיר. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-02-debit-card",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/02-debit-card.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "כרטיס חיוב",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"כרטיס חיוב\", שלוש עובדות: כרטיס חיוב מוריד כסף מהחשבון / בודקים שיש מספיק יתרה / שומרים את הקוד הסודי לעצמנו. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-03-credit-card",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/03-credit-card.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "כרטיס אשראי",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"כרטיס אשראי\", שלוש עובדות: אשראי מאפשר לשלם עכשיו ולהחזיר אחר כך / צריך להבין מתי התשלום יורד / שימוש לא מתוכנן עלול להכביד. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-04-bank-transfer",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/04-bank-transfer.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "העברה בנקאית",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"העברה בנקאית\", שלוש עובדות: העברה מעבירה כסף מחשבון לחשבון / בודקים שם וסכום לפני אישור / טעות בפרטים יכולה ליצור בעיה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-05-payment-app",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/05-payment-app.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "אפליקציית תשלום",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"אפליקציית תשלום\", שלוש עובדות: אפליקציית תשלום שולחת כסף במהירות / מאשרים רק לאדם שמכירים / בודקים הודעה לפני שליחה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-06-receipt",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/06-receipt.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "קבלה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"קבלה\", שלוש עובדות: קבלה מוכיחה ששילמנו / שומרים קבלה כשאולי נרצה להחליף / קבלה עוזרת לעקוב אחרי הוצאות. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-07-standing-order",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/07-standing-order.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "הוראת קבע",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"הוראת קבע\", שלוש עובדות: הוראת קבע משלמת סכום חוזר בזמן קבוע / היא נוחה לתשלומים קבועים / צריך לבדוק שהיא עדיין נחוצה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-08-installments",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/08-installments.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "תשלומים",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"תשלומים\", שלוש עובדות: תשלומים מחלקים קנייה לכמה חודשים / המחיר הכולל עדיין חשוב / יותר מדי תשלומים מקשים לעקוב. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-09-fee",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/09-fee.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "עמלה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"עמלה\", שלוש עובדות: עמלה היא תשלום על שירות / עמלות קטנות יכולות להצטבר / בודקים אם יש דרך זולה יותר. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-payments-cards-10-credit-limit",
+      "output_path": "assets/season-1/cards-poalim/poalim-payments-cards/10-credit-limit.webp",
+      "pack_id": "poalim-payments-cards",
+      "title_he": "מסגרת",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: תשלומים וכרטיסים\", כותרת \"מסגרת\", שלוש עובדות: מסגרת קובעת גבול לשימוש באשראי / גבול לא אומר שחייבים להשתמש בכולו / שומרים מרחק מהגבול כדי לא להילחץ. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-01-loan",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/01-loan.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "הלוואה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"הלוואה\", שלוש עובדות: הלוואה היא כסף שמקבלים ומחזירים / מחזירים בדרך כלל יותר מהסכום שקיבלו / בודקים אם באמת צריך הלוואה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-02-monthly-payment",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/02-monthly-payment.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "החזר חודשי",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"החזר חודשי\", שלוש עובדות: החזר חודשי הוא סכום שמשלמים בכל חודש / הוא צריך להתאים להכנסות ולהוצאות / החזר גבוה מדי יוצר לחץ. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-03-fixed-rate",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/03-fixed-rate.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "ריבית קבועה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"ריבית קבועה\", שלוש עובדות: ריבית קבועה לא משתנה לפי ההסכם / היא עוזרת לדעת מראש מה צפוי / בודקים מחיר מול יציבות. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-04-variable-rate",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/04-variable-rate.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "ריבית משתנה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"ריבית משתנה\", שלוש עובדות: ריבית משתנה יכולה לעלות או לרדת / שינוי ריבית משנה החזר / צריך לחשוב גם על תרחיש פחות נוח. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-05-mortgage",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/05-mortgage.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "משכנתא",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"משכנתא\", שלוש עובדות: משכנתא היא הלוואה גדולה לרכישת דירה / ההחזר נמשך שנים רבות / בודקים יכולת החזר לפני שמתחייבים. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-06-pre-approval",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/06-pre-approval.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "אישור עקרוני",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"אישור עקרוני\", שלוש עובדות: אישור עקרוני הוא בדיקה ראשונית / הוא מבוסס על פרטים שמוסרים לבנק / האישור אינו חוזה סופי. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-07-mortgage-mix",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/07-mortgage-mix.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "תמהיל מסלולים",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"תמהיל מסלולים\", שלוש עובדות: משכנתא יכולה לכלול כמה מסלולים / כל מסלול מתנהג אחרת / משווים סיכון, מחיר וגמישות. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-08-index-linkage",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/08-index-linkage.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "הצמדה למדד",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"הצמדה למדד\", שלוש עובדות: מדד מודד שינוי במחירים / הצמדה יכולה לשנות את החוב / בודקים איך המדד משפיע לאורך זמן. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-09-refinance",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/09-refinance.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "מחזור הלוואה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"מחזור הלוואה\", שלוש עובדות: מחזור בודק שינוי תנאים של הלוואה קיימת / לא תמיד מחזור משתלם / משווים עלויות לפני החלטה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-loans-mortgage-10-appraisal",
+      "output_path": "assets/season-1/cards-poalim/poalim-loans-mortgage/10-appraisal.webp",
+      "pack_id": "poalim-loans-mortgage",
+      "title_he": "שמאות",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: הלוואות ומשכנתא\", כותרת \"שמאות\", שלוש עובדות: שמאות מעריכה שווי של נכס / הבנק משתמש בה כחלק מהבדיקה / שווי הנכס משפיע על החלטות הלוואה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-01-strong-password",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/01-strong-password.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "סיסמה חזקה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"סיסמה חזקה\", שלוש עובדות: סיסמה חזקה קשה לניחוש / לא משתמשים בשם או תאריך קל / לא משתפים סיסמה עם חברים. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-02-two-step",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/02-two-step.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "אימות נוסף",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"אימות נוסף\", שלוש עובדות: אימות נוסף מוסיף בדיקה לפני כניסה / קוד חד פעמי עוזר להגן על החשבון / לא מוסרים קוד שקיבלנו בהודעה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-03-phishing",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/03-phishing.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "הודעה מתחזה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"הודעה מתחזה\", שלוש עובדות: הודעה מתחזה מנסה לגנוב פרטים / בודקים שולח וקישור לפני לחיצה / כשיש ספק שואלים מבוגר. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-04-privacy",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/04-privacy.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "פרטיות",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"פרטיות\", שלוש עובדות: פרטים אישיים שומרים בזהירות / לא מפרסמים מספר חשבון או קוד / משתפים מידע רק כשמבינים למה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-05-pin-code",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/05-pin-code.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "קוד סודי",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"קוד סודי\", שלוש עובדות: קוד סודי מאשר פעולה בכרטיס / מסתירים את היד כשמקישים קוד / לא כותבים קוד ליד הכרטיס. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-06-card-lock",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/06-card-lock.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "נעילת כרטיס",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"נעילת כרטיס\", שלוש עובדות: אם כרטיס אבד אפשר לבקש חסימה / חסימה עוזרת למנוע שימוש לא מורשה / מדווחים מהר למבוגר או לבנק. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-07-safe-site",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/07-safe-site.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "אתר מאובטח",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"אתר מאובטח\", שלוש עובדות: בודקים כתובת אתר לפני שמקלידים פרטים / אתר אמיתי לא מבקש הכל בהודעה מפתיעה / נכנסים דרך כתובת מוכרת. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-08-purchase-check",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/08-purchase-check.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "קנייה בטוחה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"קנייה בטוחה\", שלוש עובדות: בודקים מוכר, מחיר ותנאי החזרה / מחיר נמוך מדי יכול להיות סימן אזהרה / שומרים אישור תשלום. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-09-alert-message",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/09-alert-message.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "התראת פעולה",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"התראת פעולה\", שלוש עובדות: התראה מספרת שקרה משהו בחשבון / קוראים התראה גם אם עסוקים / פעולה לא מוכרת דורשת בדיקה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    },
+    {
+      "asset_id": "poalim-digital-safety-10-ask-grownup",
+      "output_path": "assets/season-1/cards-poalim/poalim-digital-safety/10-ask-grownup.webp",
+      "pack_id": "poalim-digital-safety",
+      "title_he": "שואלים מבוגר",
+      "prompt_he": "צור קלף פרימיום יחיד למשחק \"אוספים עובדות\" בעברית מלאה, עונה 1, חבילה \"בנק הפועלים: כסף דיגיטלי בטוח\", כותרת \"שואלים מבוגר\", שלוש עובדות: כסף דיגיטלי דורש אחריות / שאלה בזמן יכולה למנוע טעות / מבוגר עוזר לבדוק לפני פעולה חשובה. קלף playful לילדים על החלטות פיננסיות, בלי ייעוץ פיננסי, בלי אנגלית, רק תמונה אחת עם רקע שקוף."
+    }
+  ]
+}
