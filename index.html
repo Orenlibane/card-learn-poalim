@@ -393,6 +393,15 @@
       box-shadow: 0 22px 48px rgba(0,0,0,.26);
       transform-style: preserve-3d;
       animation: dealIn .72s cubic-bezier(.18,.9,.2,1) both;
+      cursor: pointer;
+      transition: transform .18s ease, box-shadow .18s ease;
+    }
+
+    .revealed-card:hover,
+    .revealed-card:focus-visible {
+      transform: translateY(-8px) rotate(var(--rotate)) scale(1.02);
+      box-shadow: 0 28px 58px rgba(0,0,0,.34);
+      outline: 3px solid rgba(255,255,255,.7);
     }
 
     .revealed-card:nth-child(1) { --rotate: -4deg; }
@@ -646,6 +655,206 @@
       font-weight: 900;
     }
 
+    .quiz-modal[hidden] {
+      display: none !important;
+    }
+
+    .quiz-modal {
+      position: fixed;
+      inset: 0;
+      z-index: 50;
+      display: grid;
+      place-items: center;
+      padding: clamp(12px, 3vw, 28px);
+      background: rgba(17, 24, 33, .62);
+      backdrop-filter: blur(18px);
+    }
+
+    .quiz-dialog {
+      width: min(980px, 100%);
+      max-height: min(760px, calc(100svh - 28px));
+      overflow: auto;
+      border-radius: var(--radius);
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.98), rgba(246,248,251,.98)),
+        #ffffff;
+      box-shadow: 0 36px 90px rgba(0,0,0,.36);
+      display: grid;
+      grid-template-columns: minmax(210px, 320px) minmax(0, 1fr);
+      gap: clamp(14px, 3vw, 28px);
+      padding: clamp(14px, 2.6vw, 26px);
+      position: relative;
+    }
+
+    .quiz-close {
+      position: absolute;
+      inset-inline-end: 12px;
+      top: 12px;
+      width: 40px;
+      height: 40px;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(17, 24, 33, .08);
+      color: var(--ink);
+      font-size: 1.5rem;
+      line-height: 1;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .quiz-card-preview {
+      min-width: 0;
+      display: grid;
+      align-content: center;
+      gap: 12px;
+      padding: 12px;
+      border-radius: var(--radius);
+      background:
+        radial-gradient(circle at 50% 10%, rgba(215,25,32,.16), transparent 38%),
+        linear-gradient(180deg, #ffffff, #f2f5f8);
+      border: 1px solid var(--line);
+    }
+
+    .quiz-card-preview img {
+      width: min(100%, 270px);
+      margin: 0 auto;
+      aspect-ratio: 512 / 716;
+      object-fit: cover;
+      border-radius: 8px;
+      box-shadow: 0 20px 44px rgba(32, 40, 51, .24);
+      background: #fff8e8;
+    }
+
+    .quiz-card-preview span {
+      justify-self: center;
+      border-radius: 999px;
+      padding: 7px 12px;
+      background: rgba(215,25,32,.09);
+      color: var(--red);
+      font-weight: 900;
+      text-align: center;
+    }
+
+    .quiz-content {
+      min-width: 0;
+      display: grid;
+      align-content: center;
+      gap: 12px;
+      padding-inline-end: 30px;
+    }
+
+    .quiz-kicker {
+      width: fit-content;
+      border-radius: 999px;
+      padding: 7px 12px;
+      background: #fff0f1;
+      color: var(--red);
+      font-weight: 900;
+    }
+
+    .quiz-content h2 {
+      margin: 0;
+      color: var(--ink);
+      font-size: clamp(1.55rem, 4vw, 3.2rem);
+      line-height: 1.02;
+      letter-spacing: 0;
+    }
+
+    .quiz-content p {
+      margin: 0;
+      color: var(--muted);
+      font-size: clamp(1.02rem, 2.2vw, 1.28rem);
+      font-weight: 900;
+      line-height: 1.45;
+    }
+
+    .quiz-options {
+      display: grid;
+      gap: 9px;
+      margin-top: 4px;
+    }
+
+    .quiz-options button {
+      min-height: 58px;
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      background: #ffffff;
+      color: var(--ink);
+      padding: 12px 14px;
+      text-align: right;
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(32, 40, 51, .08);
+      transition: transform .16s ease, border-color .16s ease, background .16s ease;
+    }
+
+    .quiz-options button:hover:not(:disabled),
+    .quiz-options button:focus-visible {
+      transform: translateY(-2px);
+      border-color: rgba(215,25,32,.45);
+      outline: 0;
+    }
+
+    .quiz-options button.is-correct {
+      background: rgba(45, 164, 78, .12);
+      border-color: rgba(45, 164, 78, .45);
+      color: #1d7f3f;
+    }
+
+    .quiz-options button.is-wrong {
+      background: rgba(215,25,32,.1);
+      border-color: rgba(215,25,32,.38);
+      color: var(--red);
+    }
+
+    .quiz-feedback {
+      border-radius: var(--radius);
+      padding: 11px 12px;
+      background: #f2f5f8;
+      color: var(--ink);
+      font-weight: 900;
+      line-height: 1.4;
+    }
+
+    .quiz-feedback.is-correct {
+      background: rgba(45, 164, 78, .12);
+      color: #1d7f3f;
+    }
+
+    .quiz-feedback.is-wrong {
+      background: rgba(215,25,32,.1);
+      color: var(--red);
+    }
+
+    .quiz-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 9px;
+      margin-top: 2px;
+    }
+
+    .quiz-actions button {
+      min-height: 46px;
+      border: 0;
+      border-radius: 999px;
+      padding: 0 18px;
+      color: #ffffff;
+      background: var(--red);
+      font: inherit;
+      font-weight: 900;
+      cursor: pointer;
+    }
+
+    .quiz-actions .quiet {
+      background: #e9edf1;
+      color: var(--ink);
+    }
+
+    body.quiz-open {
+      overflow: hidden;
+    }
+
     .bottom-nav {
       display: none;
       position: sticky;
@@ -731,7 +940,7 @@
 
       .stage-shell,
       .stage-ui {
-        min-height: 760px;
+        min-height: min(760px, calc(100svh - 112px));
       }
 
       .stage-ui {
@@ -775,6 +984,57 @@
 
       .bottom-nav {
         display: grid;
+      }
+
+      .quiz-modal {
+        align-items: end;
+        padding: 8px;
+      }
+
+      .quiz-dialog {
+        width: 100%;
+        max-height: calc(100svh - 16px);
+        grid-template-columns: 1fr;
+        gap: 12px;
+        padding: 12px;
+      }
+
+      .quiz-card-preview {
+        grid-template-columns: 82px minmax(0, 1fr);
+        align-items: center;
+      }
+
+      .quiz-card-preview img {
+        width: 82px;
+      }
+
+      .quiz-card-preview span {
+        justify-self: stretch;
+      }
+
+      .quiz-content {
+        padding-inline-end: 0;
+      }
+
+      .quiz-close {
+        inset-inline-end: 16px;
+        top: 16px;
+      }
+    }
+
+    @media (max-width: 460px) {
+      .reveal-slots {
+        grid-template-columns: repeat(3, minmax(132px, 1fr));
+      }
+
+      .slot,
+      .revealed-card {
+        min-width: 132px;
+      }
+
+      .quiz-options button {
+        min-height: 54px;
+        padding: 10px 12px;
       }
     }
 
@@ -896,6 +1156,27 @@
     </nav>
   </main>
 
+  <section class="quiz-modal" id="quizModal" role="dialog" aria-modal="true" aria-labelledby="quizTitle" hidden>
+    <div class="quiz-dialog">
+      <button class="quiz-close" id="quizClose" type="button" aria-label="סגור חידון">×</button>
+      <aside class="quiz-card-preview" aria-label="הקלף שעליו עונים">
+        <img id="quizCardImage" src="" alt="">
+        <span id="quizCardPack">קלף חידון</span>
+      </aside>
+      <section class="quiz-content">
+        <span class="quiz-kicker" id="quizKicker">שאלה 1</span>
+        <h2 id="quizTitle">בודקים החלטה</h2>
+        <p id="quizQuestion">בחר תשובה כדי להמשיך.</p>
+        <div class="quiz-options" id="quizOptions"></div>
+        <div class="quiz-feedback" id="quizFeedback" hidden></div>
+        <div class="quiz-actions">
+          <button id="quizNext" type="button">שאלה הבאה</button>
+          <button class="quiet" id="quizFinish" type="button">סגור</button>
+        </div>
+      </section>
+    </div>
+  </section>
+
   <div class="toast-stack" id="toastStack"></div>
 
   <script src="assets/season-1/game-data.js"></script>
@@ -913,7 +1194,18 @@
       duplicates: Number(localStorage.getItem("poalimDuplicates") || "0"),
       quizDone: Number(localStorage.getItem("poalimQuizDone") || "0"),
       owned: new Set(JSON.parse(localStorage.getItem("poalimOwnedCards") || "[]")),
+      quizRewards: new Set(JSON.parse(localStorage.getItem("poalimQuizRewards") || "[]")),
       currentCards: []
+    };
+
+    const quizState = {
+      card: null,
+      pack: null,
+      questions: [],
+      index: 0,
+      score: 0,
+      answered: false,
+      completed: false
     };
 
     const els = {
@@ -945,7 +1237,18 @@
       missionSetBar: document.querySelector("#missionSetBar"),
       missionQuiz: document.querySelector("#missionQuiz"),
       missionQuizBar: document.querySelector("#missionQuizBar"),
-      toastStack: document.querySelector("#toastStack")
+      toastStack: document.querySelector("#toastStack"),
+      quizModal: document.querySelector("#quizModal"),
+      quizClose: document.querySelector("#quizClose"),
+      quizCardImage: document.querySelector("#quizCardImage"),
+      quizCardPack: document.querySelector("#quizCardPack"),
+      quizKicker: document.querySelector("#quizKicker"),
+      quizTitle: document.querySelector("#quizTitle"),
+      quizQuestion: document.querySelector("#quizQuestion"),
+      quizOptions: document.querySelector("#quizOptions"),
+      quizFeedback: document.querySelector("#quizFeedback"),
+      quizNext: document.querySelector("#quizNext"),
+      quizFinish: document.querySelector("#quizFinish")
     };
 
     const packs = gameData.packs || [];
@@ -966,6 +1269,7 @@
       localStorage.setItem("poalimDuplicates", String(state.duplicates));
       localStorage.setItem("poalimQuizDone", String(state.quizDone));
       localStorage.setItem("poalimOwnedCards", JSON.stringify([...state.owned]));
+      localStorage.setItem("poalimQuizRewards", JSON.stringify([...state.quizRewards]));
     }
 
     function packName(pack) {
@@ -998,6 +1302,7 @@
     }
 
     function renderEmptySlots() {
+      clearThreeCards();
       els.revealSlots.innerHTML = "";
       for (let i = 0; i < packSize; i += 1) {
         const slot = document.createElement("div");
@@ -1022,6 +1327,9 @@
       state.currentCards.forEach((entry) => {
         const card = entry.card;
         const item = document.createElement("article");
+        item.tabIndex = 0;
+        item.setAttribute("role", "button");
+        item.setAttribute("aria-label", `פתח חידון על ${card.title_he}`);
         item.className = "revealed-card";
         item.innerHTML = `
           <img src="${card.asset_path}" alt="${card.title_he}" loading="lazy" decoding="async">
@@ -1031,6 +1339,13 @@
             <span>${(card.facts_he || [])[0] || ""}</span>
           </footer>
         `;
+        item.addEventListener("click", () => startQuiz(card));
+        item.addEventListener("keydown", (event) => {
+          if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            startQuiz(card);
+          }
+        });
         els.revealSlots.append(item);
       });
     }
@@ -1144,35 +1459,168 @@
     function selectPack(index) {
       state.activePackIndex = (index + packs.length) % packs.length;
       state.currentCards = [];
+      clearThreeCards();
       save();
       renderPack();
     }
 
     function resetSession() {
       state.currentCards = [];
+      clearThreeCards();
       renderRevealed();
       toast("במת הפתיחה אופסה.");
     }
 
-    function startQuiz() {
-      const card = state.currentCards[0]?.card || activePack()?.cards.find((item) => state.owned.has(item.card_id));
+    function findPackForCard(card) {
+      return packs.find((pack) => pack.cards.some((item) => item.card_id === card?.card_id)) || activePack();
+    }
+
+    function normalizeQuestion(question) {
+      if (!question) return null;
+      const options = question.options || question.options_he || [];
+      const correctIndex = Number.isInteger(question.correct_index)
+        ? question.correct_index
+        : question.correct_answer_index;
+      if (!question.question && !question.question_he) return null;
+      if (!Array.isArray(options) || options.length < 2) return null;
+      return {
+        prompt: question.question || question.question_he,
+        options,
+        correctIndex: Number(correctIndex || 0),
+        source: question.source_fact_he || ""
+      };
+    }
+
+    function questionsForCard(card) {
+      const customQuestions = (card.mvp_questions || []).map(normalizeQuestion).filter(Boolean);
+      if (customQuestions.length) return customQuestions.slice(0, 5);
+      const tier = els.ageMode.value;
+      const fallback = normalizeQuestion(card.quizzes?.[tier] || card.quizzes?.child);
+      return fallback ? [fallback] : [];
+    }
+
+    function startQuiz(cardFromClick) {
+      const card = cardFromClick
+        || state.currentCards[0]?.card
+        || activePack()?.cards.find((item) => state.owned.has(item.card_id));
       if (!card) {
         toast("פתח קלף קודם, ואז יהיה חידון.");
         return;
       }
-      const tier = els.ageMode.value;
-      const quiz = card.quizzes?.[tier] || card.quizzes?.child;
+      const questions = questionsForCard(card);
+      if (!questions.length) {
+        toast("לקלף הזה עוד אין שאלות חידון.");
+        return;
+      }
+      clearThreeCards();
+      quizState.card = card;
+      quizState.pack = findPackForCard(card);
+      quizState.questions = questions;
+      quizState.index = 0;
+      quizState.score = 0;
+      quizState.answered = false;
+      quizState.completed = false;
+      els.quizCardImage.src = card.asset_path;
+      els.quizCardImage.alt = card.title_he;
+      els.quizCardPack.textContent = quizState.pack ? packName(quizState.pack) : "קלף חידון";
+      els.quizModal.hidden = false;
+      document.body.classList.add("quiz-open");
+      renderQuizQuestion();
+    }
+
+    function renderQuizQuestion() {
+      const question = quizState.questions[quizState.index];
+      if (!question || !quizState.card) return;
+      quizState.answered = false;
+      els.quizKicker.textContent = `שאלה ${quizState.index + 1}/${quizState.questions.length}`;
+      els.quizTitle.textContent = quizState.card.title_he;
+      els.quizQuestion.textContent = question.prompt;
+      els.quizFeedback.hidden = true;
+      els.quizFeedback.className = "quiz-feedback";
+      els.quizFeedback.textContent = "";
+      els.quizNext.hidden = true;
+      els.quizNext.textContent = quizState.index === quizState.questions.length - 1 ? "סיים חידון" : "שאלה הבאה";
+      els.quizFinish.textContent = "סגור";
+      els.quizOptions.innerHTML = "";
+      question.options.forEach((option, index) => {
+        const button = document.createElement("button");
+        button.type = "button";
+        button.textContent = option;
+        button.addEventListener("click", () => answerQuiz(index));
+        els.quizOptions.append(button);
+      });
+    }
+
+    function answerQuiz(choiceIndex) {
+      if (quizState.answered) return;
+      const question = quizState.questions[quizState.index];
+      quizState.answered = true;
+      const isCorrect = choiceIndex === question.correctIndex;
+      if (isCorrect) quizState.score += 1;
+      [...els.quizOptions.children].forEach((button, index) => {
+        button.disabled = true;
+        if (index === question.correctIndex) button.classList.add("is-correct");
+        if (index === choiceIndex && !isCorrect) button.classList.add("is-wrong");
+      });
+      els.quizFeedback.hidden = false;
+      els.quizFeedback.classList.add(isCorrect ? "is-correct" : "is-wrong");
+      els.quizFeedback.textContent = isCorrect
+        ? "נכון. זאת החלטה פיננסית חכמה."
+        : `כמעט. התשובה הנכונה: ${question.options[question.correctIndex]}`;
+      els.quizNext.hidden = false;
+      els.quizNext.focus();
+    }
+
+    function finishQuiz() {
+      if (!quizState.card || quizState.completed) {
+        closeQuiz();
+        return;
+      }
+      quizState.completed = true;
       state.quizDone = 1;
-      state.coins += gameData.mvp_rules?.quiz_reward_brain_coins || 25;
+      const passScore = Math.max(1, Math.ceil(quizState.questions.length * .6));
+      const passed = quizState.score >= passScore;
+      const alreadyRewarded = state.quizRewards.has(quizState.card.card_id);
+      if (passed && !alreadyRewarded) {
+        const reward = gameData.mvp_rules?.quiz_reward_brain_coins || 25;
+        state.coins += reward;
+        state.quizRewards.add(quizState.card.card_id);
+        toast(`ניצחת בחידון: ${quizState.score}/${quizState.questions.length}. קיבלת ${reward}★.`);
+      } else if (passed) {
+        toast(`ניצחת שוב בחידון: ${quizState.score}/${quizState.questions.length}.`);
+      } else {
+        toast(`הגעת ל-${quizState.score}/${quizState.questions.length}. אפשר לנסות שוב ולשפר החלטות.`);
+      }
       save();
       renderStats();
-      toast(`${quiz?.question_he || "שאלת חידון"} · קיבלת מטבעות אימון.`);
+      closeQuiz();
+    }
+
+    function nextQuizStep() {
+      if (!quizState.answered) return;
+      if (quizState.index >= quizState.questions.length - 1) {
+        finishQuiz();
+        return;
+      }
+      quizState.index += 1;
+      renderQuizQuestion();
+    }
+
+    function closeQuiz() {
+      els.quizModal.hidden = true;
+      document.body.classList.remove("quiz-open");
     }
 
     els.openPack.addEventListener("click", openPack);
     document.querySelector("#nextPack").addEventListener("click", () => selectPack(state.activePackIndex + 1));
     els.resetButton.addEventListener("click", resetSession);
-    els.quizButton.addEventListener("click", startQuiz);
+    els.quizButton.addEventListener("click", () => startQuiz());
+    els.quizNext.addEventListener("click", nextQuizStep);
+    els.quizFinish.addEventListener("click", closeQuiz);
+    els.quizClose.addEventListener("click", closeQuiz);
+    window.addEventListener("keydown", (event) => {
+      if (event.key === "Escape" && !els.quizModal.hidden) closeQuiz();
+    });
     document.querySelectorAll(".bottom-nav button").forEach((button) => {
       button.addEventListener("click", () => {
         document.querySelectorAll(".bottom-nav button").forEach((item) => item.classList.remove("is-active"));
@@ -1189,6 +1637,7 @@
     let packMesh;
     let stageGroup;
     let cardMeshes = [];
+    let cardCleanupTimer;
     let openPulse = 0;
     const textureCache = new Map();
     const canvas = document.querySelector("#threeStage");
@@ -1256,7 +1705,31 @@
       packMesh.position.set(-1.95, -.12, .3);
       packMesh.rotation.set(-.08, .26, -.07);
       stageGroup.add(packMesh);
-      cardMeshes.forEach((mesh) => stageGroup.remove(mesh));
+      clearThreeCards();
+    }
+
+    function disposeMesh(mesh) {
+      mesh.geometry?.dispose?.();
+      if (Array.isArray(mesh.material)) {
+        mesh.material.forEach((material) => material.dispose?.());
+      } else {
+        mesh.material?.dispose?.();
+      }
+    }
+
+    function clearThreeCards() {
+      if (cardCleanupTimer) {
+        window.clearTimeout(cardCleanupTimer);
+        cardCleanupTimer = undefined;
+      }
+      if (!stageGroup || !cardMeshes.length) {
+        cardMeshes = [];
+        return;
+      }
+      cardMeshes.forEach((mesh) => {
+        stageGroup.remove(mesh);
+        disposeMesh(mesh);
+      });
       cardMeshes = [];
     }
 
@@ -1276,7 +1749,7 @@
     function triggerThreeOpen(cards) {
       if (!THREE || !stageGroup) return;
       openPulse = 1;
-      cardMeshes.forEach((mesh) => stageGroup.remove(mesh));
+      clearThreeCards();
       cardMeshes = cards.map((card, index) => {
         const mesh = makePlane(card.asset_path, 1.12, 1.57);
         mesh.userData = {
@@ -1290,6 +1763,7 @@
         stageGroup.add(mesh);
         return mesh;
       });
+      cardCleanupTimer = window.setTimeout(clearThreeCards, 1800);
     }
 
     function resizeThree() {
@@ -1333,6 +1807,16 @@
       const c3 = c1 + 1;
       return 1 + c3 * Math.pow(x - 1, 3) + c1 * Math.pow(x - 1, 2);
     }
+
+    window.render_game_to_text = () => JSON.stringify({
+      activePack: activePack()?.pack_id || null,
+      coins: state.coins,
+      revealedCards: state.currentCards.map((entry) => entry.card.card_id),
+      threeCardsVisible: cardMeshes.length,
+      quizOpen: !els.quizModal.hidden,
+      quizQuestion: !els.quizModal.hidden ? quizState.index + 1 : 0,
+      quizScore: quizState.score
+    });
 
     renderEmptySlots();
     renderPack();

@@ -101,3 +101,12 @@ Next TODOs:
 - Changed the mobile bottom navigation from fixed overlay to an in-shell bottom row after QA showed it covering the shop odds table.
 - Added a startup intro animation with a full-screen branded reveal, fanned packs, a central pack burst, flying cards, progress sweep, skip button, and reduced-motion fallback.
 - Raised the Angular component style production budget to fit the richer intro animation CSS.
+
+## 2026-05-12
+
+- Fixed the Bank Hapoalim static app quiz stage after user feedback that the quiz looked broken and a 3D card stayed floating on the side.
+- Replaced the toast-only quiz action in `index.html` with a real responsive quiz modal: rendered card image, question progress, answer buttons, correct/wrong feedback, next-question flow, completion scoring, and one-time quiz coin rewards per card.
+- Made revealed cards keyboard/click accessible so a child can tap a specific card and start its quiz directly.
+- Added Three.js reveal cleanup so temporary 3D card meshes are removed after the pack-opening animation and also cleared when switching packs, resetting, or opening the quiz.
+- Added a lightweight `window.render_game_to_text` state hook for browser QA.
+- Verified locally on `http://localhost:3000/`: opening a pack leaves `threeCardsVisible: 0`; quiz opens with 3 options, answers advance to the next question, completing 5/5 awards coins, mobile 390x844 has no horizontal overflow, and desktop 1280x820 has no horizontal overflow.
